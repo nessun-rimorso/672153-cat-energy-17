@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Василий Зозуля](https://up.htmlacademy.ru/adaptive/17/user/672153).
-* Наставник: `Неизвестно`.
+* Студент: [Панова Анастасия](https://up.htmlacademy.ru/adaptive/17/user/672153).
+* Наставник: `Кексобот`.
 
 ---
 
