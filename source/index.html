@@ -2,11 +2,123 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Cat Energy</title>
   </head>
   <body>
+  <div class="page">
+    <header class="page__header header">
+      <a class="header__logo" href="#">Cat Energy</a>
+      <nav class="header__menu menu">
+        <a class="menu__link" href="#">Главная</a>
+        <a class="menu__link" href="#">Каталог продукции</a>
+        <a class="menu__link" href="#">Подор программы</a>
+      </nav>
+    </header>
+    <main class="page__content content">
+      <section class="content__presentation presentation">
+        <h1 class="presentation__title">Функционалное питание для котов</h1>
+        <p class="presentation__description">Занялся собой? Займись котом!</p>
+        <a class="presentation__link" href="#">Подобрать программу</a>
+      </section>
+      <section class="content__programs programs">
+        <article class="programs__item">
+          <div class="programs__wrapper">
+            <h2 class="programs__title">Похудение</h2>
+            <img class="programs__picture programs__picture--slim" src="http://placehold.it/50x50" alt="Грациозный тощий котик" width="50" height="50">
+            <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="programs__link" href="#">Каталог Slim</a>
+          </div>
+        </article>
+        <article class="programs__item">
+          <div class="programs__wrapper">
+            <h2 class="programs__title">Набор массы</h2>
+            <img class="programs__picture programs__picture--panther" src="http://placehold.it/50x50" alt="Опасная мускулистая пантера" width="50" height="50">
+            <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="programs__link" href="#">Каталог pro</a>
+          </div>
+        </article>
+      </section>
+      <section class="content__how-work how-work">
+        <div class="how-work__wrapper">
+          <div class="how-work__item">
+            <img class="how-work__picture" src="http://placehold.it/60x60" alt="тематическая картинка" width="60" height="60">
+            <p class="how-work__description">Функциональное питание содержит только полезные питательные вещества.</p>
+          </div>
+          <div class="how-work__item">
+            <img class="how-work__picture" src="http://placehold.it/60x60" alt="тематическая картинка" width="60" height="60">
+            <p class="how-work__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          </div>
+          <div class="how-work__item">
+            <img class="how-work__picture" src="http://placehold.it/60x60" alt="тематическая картинка" width="60" height="60">
+            <p class="how-work__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </div>
+          <div class="how-work__item">
+            <img class="how-work__picture" src="http://placehold.it/60x60" alt="тематическая картинка" width="60" height="60">
+            <p class="how-work__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </div>
+        </div>
+      </section>
+      <section class="content__example example">
+        <div class="example__wrapper">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <ul class="example__list">
+            <li class="example__item">
+              <span class="example__accent">5 кг</span>
+              <span class="example__description">снижение
+веса</span>
+            </li>
+            <li class="example__accent-item">
+              <span class="example__accent">60 дней</span>
+              <span class="example__description">затрачено
+времени</span>
+            </li>
+          </ul>
+          <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+          <img class="example__picture" src="http://placehold.it/311x232" alt="Фото, показывающее прогресс котика"
+               height="232" width="311">
+          <label class="example__label"> Ползунок прогресса
+            <input class="example__range" type="range" min="0" max="3" step="1" value="1">
+          </label>
+          <span class="example__text">Было</span>
+          <span class="example__text">Стало</span>
+        </div>
+      </section>
+      <section class="content__contacts contacts">
+        <div class="contacts__wrapper">
+          <P class="contacts__cooperation">приглашаем к сотрудничеству дилеров!</P>
+          <P class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</P>
+        </div>
+        <div class="contacts__map">
+          <img class="contacts__picture-map" width="320" height="400" src="http://placehold.it/320x400"
+               alt="Карта местонахождения магазина">
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer footer">
+      <section class="footer__logo">
+        <a class="footer__logo-link" href="#">Cat Energy</a>
+      </section>
+      <section class="footer__socials socials">
+        <a class="socials__link" href="#">Vkontakte</a>
+        <a class="socials__link" href="#">instagram</a>
+        <a class="socials__link" href="#">Facebook</a>
+      </section>
+      <section class="footer__copyright copyright">
+        <p class="copyright__name">HTML Academy</p>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </section>
+    </footer>
+  </div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
 
+
+
+
+
+
+
+    <script src="app.js"></script>
   </body>
 </html>
