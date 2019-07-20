@@ -29,35 +29,44 @@
       программу питания для вашего кота</p>
     <form class="content__form form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form__groups">
-        <label class="form__label">Имя:*
+        <label class="form__label">
+          Имя:*
           <input class="form__input" type="text" autofocus required placeholder="Барсик">
         </label>
-        <label class="form__label">Вес (кг):*
+        <label class="form__label">
+          Вес (кг):*
           <input class="form__input" type="number" required placeholder="7">
         </label>
-        <label class="form__label">Возраст (лет):
+        <label class="form__label">
+          Возраст (лет):
           <input class="form__input" type="number" placeholder="7">
         </label>
       </fieldset>
       <fieldset class="form__groups">
-        <label class="form__label">Похудение
-          <input class="form__radio form__radio--checked" type="radio" name="radio-btn" value="slim" checked>
+        <label class="form__label radio-btn">
+          <input class="radio-btn__input" type="radio" name="radio-btn" value="slim" checked>
+          <span class="radio-btn__icon"></span>
+          Похудение
         </label>
-        <label class="form__label">Набор массы
-          <input class="form__radio" type="radio" name="radio-btn" value="hard">
+        <label class="form__label radio-btn">
+          <input class="radio-btn__input" type="radio" name="radio-btn" value="hard">
+          <span class="radio-btn__icon"></span>
+          Набор массы
         </label>
-        <label class="form__label">Не знаю (Нужен ваш совет)
-          <input class="form__radio" type="radio" name="radio-btn" value="help">
+        <label class="form__label radio-btn">
+          <input class="radio-btn__input" type="radio" name="radio-btn" value="help">
+          <span class="radio-btn__icon"></span>
+          Не знаю (Нужен ваш совет)
         </label>
       </fieldset>
       <fieldset class="form__groups">
-        <legend class="form__legend">Контактные данные
-          (владельца кота)
-        </legend>
-        <label class="form__label">E-mail:*
+        <legend class="form__legend">Контактные данные (владельца кота)</legend>
+        <label class="form__label">
+          E-mail:*
           <input class="form__mail" type="email" required placeholder="kuklachev@gmail.com">
         </label>
-        <label class="form__label">Телефон:*
+        <label class="form__label">
+          Телефон:*
           <input class="form__mail" type="tel" required placeholder="8 (960) 900-60-90">
         </label>
       </fieldset>
@@ -69,17 +78,25 @@
       </fieldset>
       <fieldset class="form__groups">
         <legend class="form__legend">Дополнительно</legend>
-        <label class="form__label">Сахарозаменитель
-          <input class="form__checkbox form__checkbox--checked" type="checkbox" value="sugar" checked>
+        <label class="form__label checkbox-btn">
+          <input class="checkbox-btn__input" type="checkbox" value="sugar" checked>
+          <span class="checkbox-btn__icon"></span>
+          Сахарозаменитель
         </label>
-        <label class="form__label">Питьевая вода
-          <input class="form__checkbox" type="checkbox" value="water">
+        <label class="form__label checkbox-btn">
+          <input class="checkbox-btn__input" type="checkbox" value="water">
+          <span class="checkbox-btn__icon"></span>
+          Питьевая вода
         </label>
-        <label class="form__label">Молоко
-          <input class="form__checkbox" type="checkbox" value="milk">
+        <label class="form__label checkbox-btn">
+          <input class="checkbox-btn__input" type="checkbox" value="milk">
+          <span class="checkbox-btn__icon"></span>
+          Молоко
         </label>
-        <label class="form__label">Витамины
-          <input class="form__checkbox" type="checkbox" value="vitamins">
+        <label class="form__label checkbox-btn">
+          <input class="checkbox-btn__input" type="checkbox" value="vitamins">
+          <span class="checkbox-btn__icon"></span>
+          Витамины
         </label>
       </fieldset>
       <button class="form__button" type="submit">Отправить заявку</button>
