@@ -1,0 +1,43 @@
+.example {
+  background: $grey-light;
+  padding-bottom: 40px;
+}
+.example__wrapper {
+  padding: 20px;
+}
+.example__title {
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+.example__description {
+  margin: 0;
+  margin-bottom: 27px;
+  font-family: $arial;
+  padding-right: 13px;
+}
+.example__list {
+  display: flex;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  list-style: none;
+}
+.example__item {
+  display: flex;
+  flex-direction: column;
+} // todo че делать с этой хуетой?
+.example__accent-description {
+  font-size: $font-size-small;
+  font-family: $arial;
+}
+.example__cost {
+  text-transform: uppercase;
+  color: $black;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.example__picture {
+  margin-bottom: 35px;
+}
