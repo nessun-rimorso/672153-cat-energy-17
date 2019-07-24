@@ -1,6 +1,6 @@
 .example {
   background: $grey-light;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .example__wrapper {
   padding: 20px;
@@ -17,18 +17,37 @@
 }
 .example__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
   list-style: none;
+  justify-content: space-between;
 }
 .example__item {
   display: flex;
   flex-direction: column;
-} // todo че делать с этой хуетой?
+  align-items: center;
+  width: 45%;
+}
+.example__accent {
+  border-radius: 3px;
+  border: solid 1px $grey-lighter;
+  padding: 13px 20px 24px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 24px;
+}
 .example__accent-description {
   font-size: $font-size-small;
   font-family: $arial;
+  text-align: center;
+  background: $grey-light;
+  margin-top: -16px;
+  padding: 10px 15px;
+  max-width: 60px;
+  line-height: 12px;
 }
 .example__cost {
   text-transform: uppercase;
@@ -38,6 +57,6 @@
   margin-bottom: 20px;
   text-align: center;
 }
-.example__picture {
-  margin-bottom: 35px;
+.example__slider {
+  margin-bottom: 20px;
 }

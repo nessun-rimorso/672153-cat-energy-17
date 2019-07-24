@@ -1,13 +1,16 @@
 .socials {
   list-style: none;
-  padding: 21px;
-  margin: 0;
+  padding: 21px 0;
+  margin: 0 20px;
   border-bottom: $grey-yet solid 1px;
   display: flex;
   justify-content: center;
 }
 .socials__item {
   margin-right: 38px;
+}
+.socials__item:last-of-type {
+  margin-right: 0;
 }
 .socials__link {
   font-size: 0;

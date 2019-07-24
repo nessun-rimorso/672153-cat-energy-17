@@ -1,0 +1,41 @@
+.program__wrapper {
+  padding: 22px 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.program__picture {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: $green;
+  border-radius: 50%;
+}
+.program__picture img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.program__title {
+  line-height: 37px;
+}
+.program__description {
+  margin: 0;
+  margin-bottom: 23px;
+  padding-right: 15px;
+  font-family: $arial;
+}
+.program__link {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  text-decoration: none;
+  color: $black;
+  font-size: $font-size-medium;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-top: $grey-yet solid 1px;
+  cursor: pointer;
+}
