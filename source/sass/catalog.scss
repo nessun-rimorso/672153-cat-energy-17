@@ -1,0 +1,23 @@
+.catalog__wrapper {
+  padding: 10px 20px 35px 20px;
+  width: 320px;
+  margin: 0 auto;
+}
+.catalog__title {
+  line-height: 60px;
+  margin-bottom: 20px;
+  padding-left: 22px;
+}
+.catalog__list {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
+  list-style: none;
+}
+.catalog__item {
+  margin-bottom: 25px;
+}
+.catalog__item:last-of-type {
+  margin-bottom: 0;
+}

@@ -1,13 +1,14 @@
 .title {
   margin: 0;
+
   font-size: $font-size-h1;
   font-weight: 400;
   color: $black;
 }
 .title--small {
-  font-weight: 400;
-  text-transform: uppercase;
-  color: $black;
   margin: 0;
+
+  font-weight: 400;
+  color: $black;
   font-size: $font-size-h2;
 }
