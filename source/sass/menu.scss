@@ -1,6 +1,7 @@
 .menu {
   position: relative;
 }
+
 .menu__button {
   position: absolute;
   right: 0;
@@ -10,37 +11,46 @@
   background-color: transparent;
   cursor: pointer;
 }
+
 .menu__icon {
   display: block;
   width: 25px;
   height: 19px;
   background-repeat: no-repeat;
 }
+
 .menu__icon--open {
   background-image: url("../img/icon-mobile-menu.svg");
 }
+
 .menu__icon--close {
   background-image: url("../img/icon-close.svg");
 }
+
 .menu--open .menu__icon--close,
 .menu--close .menu__icon--open {
   display: block;
 }
+
 .menu--open .menu__icon--open,
-.menu--close .menu__icon--close{
+.menu--close .menu__icon--close {
   display: none;
 }
+
 .menu__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .menu--open .menu__list {
   display: block;
 }
+
 .menu--close .menu__list {
   display: none;
 }
+
 .menu__link {
   display: block;
   padding: 24px;

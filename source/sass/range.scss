@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .range__text-btn {
   text-transform: uppercase;
   color: $black-dark;
@@ -13,9 +14,11 @@
   background: transparent;
   cursor: pointer;
 }
+
 .range__label {
   font-size: 0;
 }
+
 .range__line {
   padding: 3px 6px;
   box-sizing: border-box;
@@ -27,6 +30,7 @@
   background-color: $white;
   position: relative;
 }
+
 .range__button {
   width: 35px;
   height: 6px;

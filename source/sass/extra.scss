@@ -3,6 +3,7 @@
 
   border-top: solid 1px $grey;
 }
+
 .extra__title {
   position: relative;
 
@@ -10,6 +11,7 @@
 
   line-height: 24px;
 }
+
 .extra__title::before {
   content: "";
   position: absolute;
@@ -23,6 +25,7 @@
 
   background: $green;
 }
+
 .extra__products {
   margin: 0;
   padding: 0;
@@ -30,11 +33,13 @@
   list-style: none;
   border-top: solid 1px $black-lighter;
 }
+
 .extra__item {
   padding: 14px 0 17px;
 
   border-bottom: solid 1px $black-lighter;
 }
+
 .extra__product {
   display: block;
   margin-bottom: 15px;
@@ -45,6 +50,7 @@
   color: $black;
   text-transform: uppercase;
 }
+
 .extra__table {
   display: flex;
   justify-content: space-between;

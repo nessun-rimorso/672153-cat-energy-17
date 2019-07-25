@@ -5,25 +5,30 @@
 
   border-top: solid 1px $grey;
 }
+
 .product__link-picture {
   display: block;
 
   font-size: 0;
   text-decoration: none;
 }
+
 .product__link {
   display: block;
 
   font-size: 0;
   text-decoration: none;
 }
+
 .product__button {
   width: 100%;
 }
+
 .product__description {
   width: 50%;
   padding-top: 25px;
 }
+
 .product__title {
   display: block;
   padding-right: 50px;
@@ -36,6 +41,7 @@
   line-height: 20px;
   color: $black-dark;
 }
+
 .product__table {
   display: flex;
   flex-wrap: wrap;
@@ -46,11 +52,13 @@
   font-size: $font-size-small;
   line-height: 16px;
 }
+
 .product__term,
 .product__determination {
   width: 50%;
   margin: 0;
 }
+
 .product__determination {
   text-align: end;
 }

@@ -2,19 +2,23 @@
   background: $grey-light;
   padding-bottom: 20px;
 }
+
 .example__wrapper {
   padding: 20px;
 }
+
 .example__title {
   line-height: 60px;
   margin-bottom: 30px;
 }
+
 .example__description {
   margin: 0;
   margin-bottom: 27px;
   font-family: $arial;
   padding-right: 13px;
 }
+
 .example__list {
   display: flex;
   flex-wrap: wrap;
@@ -24,12 +28,14 @@
   list-style: none;
   justify-content: space-between;
 }
+
 .example__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 45%;
 }
+
 .example__accent {
   border-radius: 3px;
   border: solid 1px $grey-lighter;
@@ -39,6 +45,7 @@
   text-align: center;
   line-height: 24px;
 }
+
 .example__accent-description {
   font-size: $font-size-small;
   font-family: $arial;
@@ -49,6 +56,7 @@
   max-width: 60px;
   line-height: 12px;
 }
+
 .example__cost {
   text-transform: uppercase;
   color: $black-dark;
@@ -57,6 +65,7 @@
   margin-bottom: 20px;
   text-align: center;
 }
+
 .example__slider {
   margin-bottom: 20px;
 }

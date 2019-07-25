@@ -2,6 +2,7 @@
   padding: 31px 32px 26px 19px;
   display: flex;
 }
+
 .contacts__cooperation {
   margin: 0;
   margin-right: 20px;
@@ -10,11 +11,13 @@
   color: $black-dark;
   line-height: 20px;
 }
+
 .contacts__address {
   margin: 0;
   font-family: $arial;
   line-height: 20px;
 }
+
 .contacts__picture-map {
   position: relative;
   display: block;
