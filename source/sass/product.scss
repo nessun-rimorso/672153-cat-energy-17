@@ -1,7 +1,9 @@
 .product {
-  border-top: solid 1px $grey;
   display: flex;
   flex-wrap: wrap;
+  padding: 0 20px;
+
+  border-top: solid 1px $grey;
 }
 .product__link-picture {
   display: block;
@@ -28,10 +30,11 @@
   margin-bottom: 18px;
 
   font-size: $font-size-medium;
-  line-height: 20px;
-  color: $black;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
+
+  line-height: 20px;
+  color: $black-dark;
 }
 .product__table {
   display: flex;

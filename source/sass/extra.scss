@@ -1,5 +1,5 @@
 .extra__wrapper {
-  padding: 30px 20px 17px 20px;
+  padding: 30px 20px 0 20px;
 
   border-top: solid 1px $grey;
 }
@@ -36,5 +36,22 @@
   border-bottom: solid 1px $black-lighter;
 }
 .extra__product {
-  
+  display: block;
+  margin-bottom: 15px;
+
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 16px;
+  color: $black;
+  text-transform: uppercase;
+}
+.extra__table {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 14px;
 }
