@@ -1,0 +1,20 @@
+.button {
+  display: block;
+  padding: 13px 15px 12px 15px;
+
+  font-size: $font-size-medium;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button--green {
+  color: $white;
+  background-color: $green;
+}
+
+.button--grey {
+  color: $main-color;
+  background-color: $grey-light;
+}

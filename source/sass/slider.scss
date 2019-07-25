@@ -1,0 +1,24 @@
+.slider {
+  position: relative;
+  min-height: 240px;
+}
+
+.slider__picture {
+  display: block;
+  margin: 0 auto 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider__picture:nth-child(2) {
+  transform: translateX(-12px);
+}
+
+.slider__picture-1 {
+  opacity: 1;
+}
+
+.slider__picture-2 {
+  opacity: 0;
+}

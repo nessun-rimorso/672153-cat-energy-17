@@ -1,0 +1,20 @@
+.presentation { //todo придумать что-то чтобы поставить зеленый цвет на картинку-заливку, иначе при неотображении картинки не будет видно текст
+  padding: 0 20px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  color: $white;
+  text-align: center;
+}
+
+.presentation__title {
+  padding: 29px 15px 10px 15px;
+  line-height: 36px;
+  color: inherit;
+}
+
+.presentation__description {
+  padding: 9px 0;
+  margin: 0;
+  line-height: 14px;
+  text-transform: uppercase;
+}

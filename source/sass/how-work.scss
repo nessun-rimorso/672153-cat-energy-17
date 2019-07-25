@@ -1,0 +1,41 @@
+.how-work {
+  padding: 10px 20px 20px 20px;
+}
+
+.how-work__title {
+  line-height: 60px;
+  margin-bottom: 35px;
+}
+
+.how-work__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.how-work__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.how-work__picture {
+  margin-right: 20px;
+  background: $green;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.how-work__picture img {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.how-work__description {
+  margin: 0;
+  padding-right: 9px;
+  font-family: $arial;
+  width: 210px;
+}

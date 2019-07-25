@@ -1,0 +1,15 @@
+.copyright {
+  padding: 22px 20px 0 20px;
+  display: flex;
+}
+
+.copyright__name {
+  font-family: $arial;
+  font-size: $font-size-medium;
+  line-height: 16px;
+  margin-right: auto;
+}
+
+.copyright__logo {
+  font-size: 0;
+}
