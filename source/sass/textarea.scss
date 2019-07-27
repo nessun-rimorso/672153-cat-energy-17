@@ -1,0 +1,18 @@
+.textarea {
+  margin: 0;
+  padding: 13px;
+  width: 280px;
+  min-height: 150px;
+  box-sizing: border-box;
+
+  text-transform: uppercase;
+  color: $black;
+
+  border: 1px solid $grey-lighter;
+  resize: none;
+}
+
+.textarea::placeholder {
+  color: $main-color;
+  font-size: $font-size-medium;
+}
