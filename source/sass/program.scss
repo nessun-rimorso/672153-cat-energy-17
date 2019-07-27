@@ -22,8 +22,13 @@
 }
 
 .program__title {
-  line-height: 37px;
+  margin: 0;
+
+  font-weight: 400;
+  color: $black-dark;
+  font-size: $font-size-h2;
   text-transform: uppercase;
+  line-height: 37px;
 }
 
 .program__description {

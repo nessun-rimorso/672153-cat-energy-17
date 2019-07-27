@@ -1,0 +1,55 @@
+.form__groups {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  display: flex;
+
+  border: none;
+}
+
+.form__groups:first-of-type {
+  margin-bottom: 23px;
+}
+
+.form__label {
+  margin-bottom: 14px;
+}
+
+.form-personal__label--min-margin {
+  margin-bottom: 12px;
+}
+
+.form__label:last-of-type {
+  margin-bottom: 0;
+}
+
+.form__groups--border {
+  padding: 22px 20px;
+
+  border-top: 1px solid $grey-yet;
+  border-bottom: 1px solid $grey-yet;
+}
+
+.form__legend {
+  margin-bottom: 30px;
+
+  line-height: 24px;
+}
+
+.form__wrapper {
+  padding: 0 20px;
+  margin-bottom: 34px;
+}
+
+.form__button {
+  width: 100%;
+  margin-bottom: 23px;
+}
+
+.form__text {
+  display: block;
+
+  font-family: $arial;
+  text-align: center;
+  line-height: 16px;
+}

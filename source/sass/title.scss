@@ -7,9 +7,25 @@
 }
 
 .title--small {
+  position: relative;
+
   margin: 0;
 
   font-weight: 400;
   color: $black-dark;
   font-size: $font-size-h2;
+  line-height: 24px;
+}
+
+.title--small::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 70%;
+
+  display: block;
+  width: 100vw;
+  height: 3px;
+
+  background: $green;
 }

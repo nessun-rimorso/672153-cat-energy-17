@@ -14,3 +14,22 @@
 .content__how-work {
   margin-bottom: 22px;
 }
+
+.content__title {
+  margin-bottom: 20px;
+
+  line-height: 60px;
+}
+
+.content__description {
+  margin: 0;
+  padding-right: 30px;
+
+  text-transform: uppercase;
+  color: $black-dark;
+}
+
+.content__wrapper {
+  margin-bottom: 39px;
+  padding: 10px 20px 0 20px;
+}

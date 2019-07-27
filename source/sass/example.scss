@@ -37,13 +37,19 @@
 }
 
 .example__accent {
-  border-radius: 3px;
-  border: solid 1px $grey-lighter;
+  margin: 0;
   padding: 13px 20px 24px 20px;
   width: 100%;
-  box-sizing: border-box;
+
+  font-weight: 400;
+  color: $black-dark;
+  font-size: $font-size-h2;
   text-align: center;
   line-height: 24px;
+
+  border-radius: 3px;
+  border: solid 1px $grey-lighter;
+  box-sizing: border-box;
 }
 
 .example__accent-description {
