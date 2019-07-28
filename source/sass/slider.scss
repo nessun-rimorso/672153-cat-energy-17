@@ -1,4 +1,5 @@
-.slider {
+.slider__container {
+  margin-bottom: 20px;
   position: relative;
   min-height: 240px;
 }
@@ -21,4 +22,26 @@
 
 .slider__picture-2 {
   opacity: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    background: linear-gradient(to right, $grey-light 50%, $grey-yet 50%);
+  }
+
+  .slider__container {
+    min-height: 348px;
+    margin: 0;
+  }
+
+  .slider__picture {
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin-top: -170px;
+  }
+
+  .slider__range {
+    padding-bottom: 68px;
+  }
 }

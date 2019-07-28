@@ -7,3 +7,17 @@
 
   background: $grey-light;
 }
+
+@media (min-width: $tablet-width) {
+  .programs {
+    padding: 0 30px;
+  }
+
+  .programs__item {
+     margin-bottom: 30px;
+   }
+
+  .programs__item:last-of-type {
+    margin-bottom: 0;
+  }
+}

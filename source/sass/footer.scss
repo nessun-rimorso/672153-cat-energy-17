@@ -1,7 +1,9 @@
 .footer {
   width: 320px;
   margin: auto;
+
   box-sizing: border-box;
+
   background: $grey-light;
 }
 
@@ -16,4 +18,21 @@
 .footer__logo-link img {
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    width: $tablet-width;
+  }
+
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 30px;
+  }
+
+  .footer__logo-link {
+    margin: 0;
+  }
 }

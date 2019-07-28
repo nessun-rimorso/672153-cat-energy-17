@@ -1,7 +1,7 @@
 .title {
   margin: 0;
 
-  font-size: $font-size-h1;
+  font-size: $font-size-title;
   font-weight: 400;
   color: $black-dark;
 }
@@ -13,7 +13,7 @@
 
   font-weight: 400;
   color: $black-dark;
-  font-size: $font-size-h2;
+  font-size: $font-size-title-small;
   line-height: 24px;
 }
 
@@ -28,4 +28,14 @@
   height: 3px;
 
   background: $green;
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: $font-size-title-large;
+  }
+
+  .title--small {
+    font-size: $font-size-title;
+  }
 }

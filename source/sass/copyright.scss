@@ -1,15 +1,33 @@
 .copyright {
-  padding: 22px 20px 0 20px;
   display: flex;
+
+  padding: 22px 20px 0 20px;
 }
 
 .copyright__name {
-  font-family: $arial;
-  font-size: $font-size-medium;
-  line-height: 16px;
   margin-right: auto;
+
+  font-size: $font-size-medium;
+  font-family: $arial;
+  line-height: 16px;
 }
 
 .copyright__logo {
   font-size: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    align-items: center;
+    padding: 0;
+  }
+
+  .copyright__name {
+    margin: 0;
+    align-items: center;
+  }
+
+  .copyright__logo {
+    display: flex;
+  }
 }

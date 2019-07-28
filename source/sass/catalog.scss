@@ -29,3 +29,9 @@
 .catalog__extra {
   margin-bottom: 39px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__wrapper {
+    width: $tablet-width;
+  }
+}

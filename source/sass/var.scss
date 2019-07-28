@@ -7,15 +7,21 @@ $black-light: #666666;
 $black-lighter: #cecece; // todo сравнить этот цвет и $grey-lighter мб это один и тот же
 $white: #ffffff;
 $grey: #ededed;
-$grey-light: #f2f2f2;
+$grey-light: #f2f2f2; // todo сделать его белым-темным
 $grey-yet: #ededed;
 $grey-lighter: #cdcdcd;
+$grey-another: #dcdcdc;
 $green: #68b738;
 $main-color: #444444;
 
-$font-size-h1: 36px;
-$font-size-h2: 24px;
+$font-size-title: 36px;
+$font-size-title-large: 60px;
+$font-size-title-small: 24px;
 $font-size-default: 14px;
 $font-size-medium: 16px;
 $font-size-small: 12px;
-$font-size-large: 20px;
+$font-size-large: 18px;
+$font-size-larger: 20px;
+$font-size-largest: 30px;
+
+$tablet-width: 768px;

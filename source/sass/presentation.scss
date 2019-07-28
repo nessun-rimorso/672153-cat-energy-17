@@ -1,13 +1,16 @@
 .presentation { //todo придумать что-то чтобы поставить зеленый цвет на картинку-заливку, иначе при неотображении картинки не будет видно текст
   padding: 0 20px;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
+
   color: $white;
   text-align: center;
+
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
 }
 
 .presentation__title {
   padding: 29px 15px 10px 15px;
+
   line-height: 36px;
   color: inherit;
 }
@@ -15,6 +18,46 @@
 .presentation__description {
   padding: 9px 0;
   margin: 0;
-  line-height: 14px;
+
   text-transform: uppercase;
+  line-height: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .presentation {
+    position: relative;
+
+    min-height: 806px;
+    margin: 0 120px;
+    padding: 0;
+
+    text-align: left;
+    color: $black-dark;
+
+    background-image: none;
+  }
+
+  .presentation__title {
+    padding: 0;
+    margin-bottom: 33px;
+
+    line-height: 60px;
+  }
+
+  .presentation__description {
+    margin-bottom: 40px;
+
+    font-size: $font-size-larger;
+    line-height: 20px;
+  }
+
+  .presentation__picture {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .presentation__link {
+    display: inline-block;
+    padding: 17px 30px 15px;
+  }
 }

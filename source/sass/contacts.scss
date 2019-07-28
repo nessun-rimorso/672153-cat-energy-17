@@ -7,18 +7,58 @@
   margin: 0;
   margin-right: 20px;
   font-size: $font-size-medium;
+
   text-transform: uppercase;
-  color: $black-dark;
   line-height: 20px;
+  color: $black-dark;
 }
 
 .contacts__address {
   margin: 0;
+
   font-family: $arial;
   line-height: 20px;
 }
 
 .contacts__picture-map {
   position: relative;
+
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    padding: 65px 70px;
+  }
+
+  .contacts__wrapper--white {
+    background: $white;
+  }
+
+  .contacts__cooperation {
+    width: 160px;
+
+    font-size: $font-size-larger;
+    text-align: left;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    width: 160px;
+    margin-left: auto;
+
+    font-size: $font-size-medium;
+    text-align: right;
+    line-height: 20px;
+  }
+
+  .contacts__address span {
+    display: block;
+    padding-top: 25px;
+  }
+
+  .contacts__picture-map {
+    width: 767px;
+    height: 400px;
+  }
 }
