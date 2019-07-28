@@ -42,7 +42,7 @@
 
 @media (min-width: $tablet-width) {
   .how-work {
-   padding: 0 30px;
+    padding: 0 30px;
   }
 
   .how-work__title {
@@ -60,7 +60,6 @@
 
   .how-work__item {
     position: relative;
-    
     display: flex;
     flex-direction: column;
     width: 250px;
@@ -76,7 +75,7 @@
     right: 0;
     z-index: -1;
 
-    content:counter(myCounter);
+    content: counter(myCounter);
     counter-increment: myCounter;
     display: inline-block;
 
