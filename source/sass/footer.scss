@@ -1,7 +1,4 @@
 .footer {
-  width: 320px;
-  margin: auto;
-
   box-sizing: border-box;
 
   background: $grey-light;
@@ -9,7 +6,7 @@
 
 .footer__logo-link {
   display: flex;
-  margin: 0 20px;
+  padding: 20px 0 10px;
 
   font-size: 0;
   border-bottom: $grey-yet solid 1px;
@@ -21,18 +18,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer {
-    width: $tablet-width;
-  }
-
-  .footer__container {
+  .footer__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 30px;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 
   .footer__logo-link {
     margin: 0;
+    padding: 0;
   }
 }

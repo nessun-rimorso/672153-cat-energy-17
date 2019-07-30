@@ -43,8 +43,9 @@
 
 .menu__list {
   list-style: none;
+  width: 320px;
+  margin: 0 auto;
   padding: 0;
-  margin: 0;
 }
 
 .menu--open .menu__list {
@@ -84,6 +85,7 @@
   .menu .menu__list {
     display: flex;
     justify-content: space-between;
+    width: auto;
   }
 
   .menu__link {

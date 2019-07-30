@@ -1,7 +1,5 @@
 .extra__wrapper {
-  padding: 30px 20px 0 20px;
-
-  border-top: solid 1px $grey;
+  padding-top: 30px;
 }
 
 .extra__title {
@@ -42,4 +40,51 @@
   font-family: $arial;
   font-size: 14px;
   line-height: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .extra__products {
+    border: solid 1px $black-lighter;
+  }
+
+  .extra__title {
+    margin-bottom: 75px;
+  }
+
+  .extra__item {
+    padding: 0;
+  }
+
+  .extra__item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 28px 38px;
+  }
+
+  .extra__item:last-of-type {
+    border: none;
+  }
+
+  .extra__product {
+    margin-bottom: 0;
+
+    font-size: $font-size-large;
+    line-height: 20px;
+  }
+
+  .extra__table {
+    margin-bottom: 0;
+  }
+
+  .extra__term,
+  .extra__determination {
+    font-size: $font-size-medium;
+    line-height: 20px;
+  }
+
+  .extra__button {
+    width: 100%;
+    margin-top: 25px;
+  }
 }

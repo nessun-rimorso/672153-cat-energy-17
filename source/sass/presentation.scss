@@ -1,6 +1,4 @@
 .presentation { //todo придумать что-то чтобы поставить зеленый цвет на картинку-заливку, иначе при неотображении картинки не будет видно текст
-  padding: 0 20px;
-
   color: $white;
   text-align: center;
 
@@ -28,13 +26,17 @@
     position: relative;
 
     min-height: 806px;
-    margin: 0 120px;
     padding: 0;
 
     text-align: left;
     color: $black-dark;
 
     background-image: none;
+  }
+
+  .presentation__wrapper {
+    padding: 0 90px;
+    box-sizing: border-box;
   }
 
   .presentation__title {

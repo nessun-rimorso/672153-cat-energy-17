@@ -1,7 +1,7 @@
-.promo {
+.promo__wrapper {
   width: 280px;
   min-height: 289px;
-  margin: 0 auto;
+  margin-bottom: 35px;
   padding: 65px 59px 43px;
   box-sizing: border-box;
 
@@ -26,4 +26,27 @@
 
 .promo__text {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__wrapper {
+    width: 708px;
+    min-height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 125px 65px 90px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    box-sizing: border-box;
+  }
+
+  .promo__picture {
+    margin: 0;
+    margin-bottom: 0;
+  }
+
+  .promo__text {
+    width: 170px;
+    text-align: left;
+  }
 }

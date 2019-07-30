@@ -1,7 +1,7 @@
 .copyright {
   display: flex;
 
-  padding: 22px 20px 0 20px;
+  padding-top: 22px;
 }
 
 .copyright__name {
@@ -23,8 +23,9 @@
   }
 
   .copyright__name {
-    margin: 0;
     align-items: center;
+    margin: 0;
+    margin-right: 15px;
   }
 
   .copyright__logo {

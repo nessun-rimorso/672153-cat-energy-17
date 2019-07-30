@@ -1,15 +1,13 @@
-.how-work {
-  padding: 10px 20px 20px 20px;
-}
-
 .how-work__title {
-  line-height: 60px;
   margin-bottom: 35px;
+
+  line-height: 60px;
 }
 
 .how-work__list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -19,32 +17,31 @@
 }
 
 .how-work__picture {
-  margin-right: 20px;
-  background: $green;
+  position: relative;
+
   width: 60px;
   height: 60px;
-  position: relative;
+  margin-right: 20px;
+
+  background: $green;
 }
 
 .how-work__picture img {
-  transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .how-work__description {
+  width: 210px;
   margin: 0;
   padding-right: 9px;
+
   font-family: $arial;
-  width: 210px;
 }
 
 @media (min-width: $tablet-width) {
-  .how-work {
-    padding: 0 30px;
-  }
-
   .how-work__title {
     margin-bottom: 63px;
   }

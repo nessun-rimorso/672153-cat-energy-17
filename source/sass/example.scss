@@ -4,17 +4,13 @@
   background: $grey-light;
 }
 
-.example__wrapper {
-  padding: 20px;
-}
-
 .example__title {
   margin-bottom: 30px;
 
   line-height: 60px;
 }
 
-.example__description {
+.example__text {
   margin: 0;
   margin-bottom: 27px;
   padding-right: 13px;
@@ -88,15 +84,11 @@
     background: $white;
   }
 
-  .example__wrapper {
-    padding: 0 30px;
-  }
-
   .example__title {
     margin-bottom: 60px;
   }
 
-  .example__description {
+  .example__text {
     margin-bottom: 56px;
 
     font-size: $font-size-medium;
