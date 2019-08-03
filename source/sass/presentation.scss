@@ -1,13 +1,32 @@
-.presentation { //todo придумать что-то чтобы поставить зеленый цвет на картинку-заливку, иначе при неотображении картинки не будет видно текст
-  padding: 0 20px;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
+.presentation {
+  position: relative;
+  
   color: $white;
   text-align: center;
 }
 
+.presentation__wrapper {
+  position: relative;
+}
+
+.presentation__wrapper::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  
+  display: block;
+  width: 100%;
+  height: 305px;
+
+  background-color: $green-dark;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
 .presentation__title {
   padding: 29px 15px 10px 15px;
+
   line-height: 36px;
   color: inherit;
 }
@@ -15,6 +34,81 @@
 .presentation__description {
   padding: 9px 0;
   margin: 0;
-  line-height: 14px;
+
   text-transform: uppercase;
+  line-height: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .presentation {
+    position: relative;
+
+    min-height: 806px;
+    padding: 0;
+
+    text-align: left;
+    color: $black-dark;
+
+    background-image: none;
+  }
+
+  .presentation__wrapper::before {
+    display: none;
+  }
+
+  .presentation__wrapper {
+    padding: 0 90px;
+    box-sizing: border-box;
+  }
+
+  .presentation__title {
+    padding: 0;
+    margin-bottom: 33px;
+
+    line-height: 60px;
+  }
+
+  .presentation__description {
+    margin-bottom: 40px;
+
+    font-size: $font-size-larger;
+    line-height: 20px;
+  }
+
+  .presentation__picture {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .presentation__link {
+    display: inline-block;
+    padding: 17px 30px 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .presentation {
+    min-height: 505px;
+  }
+
+  .presentation__wrapper {
+    padding-top: 33px;
+  }
+
+  .presentation__title {
+    width: 550px;
+  }
+
+  .presentation__description {
+    margin-bottom: 50px;
+  }
+
+  .presentation__picture {
+    top: 0;
+    right: 328px;
+  }
+
+  .presentation__link {
+    font-size: $font-size-larger;
+  }
 }

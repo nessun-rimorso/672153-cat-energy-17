@@ -1,7 +1,7 @@
 .title {
   margin: 0;
 
-  font-size: $font-size-h1;
+  font-size: $font-size-title;
   font-weight: 400;
   color: $black-dark;
 }
@@ -9,23 +9,57 @@
 .title--small {
   position: relative;
 
+  display: inline-block;
+  padding-right: 22px;
+  padding-left: 40px;
   margin: 0;
+  margin-left: -40px;
 
   font-weight: 400;
   color: $black-dark;
-  font-size: $font-size-h2;
+  font-size: $font-size-title-small;
   line-height: 24px;
+
+  background: $white;
+}
+
+.title--small::before,
+.title--small::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+  height: 3px;
+  margin-top: 2px;
+  background: #68b738;
+  z-index: -1;
+  box-sizing: inherit;
 }
 
 .title--small::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 70%;
+  right: 0;
+}
 
-  display: block;
-  width: 100vw;
-  height: 3px;
+.title--small::after {
+  left: 20px;
+}
 
-  background: $green;
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: $font-size-title-large;
+  }
+
+  .title--small {
+    padding-right: 40px;
+    margin-left: 0;
+
+    font-size: $font-size-title;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title--small {
+    margin-left: -40px;
+  }
 }

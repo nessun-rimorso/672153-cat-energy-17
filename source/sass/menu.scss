@@ -12,6 +12,10 @@
   cursor: pointer;
 }
 
+.page__no-js .menu__button {
+  display: none;
+}
+
 .menu__icon {
   display: block;
   width: 25px;
@@ -39,8 +43,9 @@
 
 .menu__list {
   list-style: none;
+  min-width: 320px;
+  margin: 0 auto;
   padding: 0;
-  margin: 0;
 }
 
 .menu--open .menu__list {
@@ -59,11 +64,84 @@
   text-decoration: none;
   color: $black-dark;
   font-family: $oswald;
-  font-size: $font-size-large;
+  font-size: $font-size-larger;
   font-weight: 500;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   vertical-align: center;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .menu__button {
+    display: none;
+  }
+
+  .menu {
+    //width: 438px;
+  }
+
+  .menu .menu__list {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  .menu__link {
+    padding: 12px 0;
+
+    font-size: $font-size-large;
+    line-height: 25px;
+    color: $black;
+
+    border-top: none;
+  }
+
+  .menu__item {
+    margin-right: 36px;
+  }
+
+  .menu__item:last-of-type {
+    margin-right: 0;
+  }
+
+  .menu__link--active {
+    border-bottom: 2px solid $green;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu {
+    position: static;
+  }
+
+  .menu__list--green::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    width: 50vw;
+    height: 696px;
+
+    background-color: $green-dark;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  .menu__list--green .menu__link {
+    color: $white;
+  }
+
+  .menu__list--green .menu__link--active {
+    border-bottom: 2px solid $white;
+  }
+
+  .menu__link {
+    font-size: $font-size-larger;
+  }
 }

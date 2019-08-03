@@ -1,9 +1,32 @@
-.programs {
-  padding: 0 20px;
-}
-
 .programs__item {
   margin-bottom: 20px;
 
   background: $grey-light;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item {
+    margin-bottom: 30px;
+  }
+
+  .programs__item:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .programs__item {
+    width: 570px;
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
+
+  .programs__item:last-of-type {
+    margin-right: 0;
+  }
 }

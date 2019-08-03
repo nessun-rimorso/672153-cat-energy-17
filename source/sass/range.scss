@@ -5,10 +5,12 @@
 }
 
 .range__text-btn {
-  text-transform: uppercase;
-  color: $black-dark;
-  line-height: 20px;
+  position: relative;
+
   font-size: $font-size-medium;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: $black-dark;
 
   border: none;
   background: transparent;
@@ -20,22 +22,91 @@
 }
 
 .range__line {
-  padding: 3px 6px;
-  box-sizing: border-box;
+  position: relative;
+
   display: flex;
   width: 84px;
   height: 14px;
+  padding: 3px 6px;
+
+  box-sizing: border-box;
   border-radius: 6px;
   border: solid 1px $grey-lighter;
   background-color: $white;
-  position: relative;
 }
 
 .range__button {
   width: 35px;
   height: 6px;
+
   border: none;
   outline: none;
   border-radius: 3px;
   background-color: $green;
+
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .range {
+    position: relative;
+    z-index: 1;
+  }
+
+  .range__text-btn {
+    padding: 0;
+    padding-bottom: 6px;
+
+    font-size: $font-size-larger;
+    line-height: 20px;
+
+    border-bottom: 1px dotted rgba($black-dark, 0.23);
+  }
+
+  .range__line {
+    position: relative;
+
+    width: 428px;
+    height: 6px;
+    margin: 0 20px;
+
+    border-radius: 2.5px;
+    border: none;
+    background-color: $grey-another;
+  }
+
+  .range__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 34px;
+    height: 34px;
+
+    box-shadow: 0 2px 5px 0 rgba($white, 0.15);
+    border: solid 1px $grey-lighter;
+    background-color: $white;
+    border-radius: 50%;
+  }
+
+  .range__button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+    background: $green;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range {
+    justify-content: flex-end;
+  }
 }

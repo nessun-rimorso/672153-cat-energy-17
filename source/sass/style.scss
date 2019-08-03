@@ -1,7 +1,9 @@
 @import "normalize";
 @import "var";
 @import "font";
+@import "container";
 @import "title";
+@import "button";
 @import "contacts";
 @import "content";
 @import "page";
@@ -13,13 +15,14 @@
 @import "presentation";
 @import "programs";
 @import "socials";
-@import "button";
 @import "range";
 @import "copyright";
 @import "slider";
 @import "program";
 @import "catalog";
+@import "productions";
 @import "product";
+@import "products";
 @import "product-else";
 @import "extra";
 @import "promo";
@@ -28,3 +31,7 @@
 @import "checkbox-btn";
 @import "field-input";
 @import "textarea";
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}

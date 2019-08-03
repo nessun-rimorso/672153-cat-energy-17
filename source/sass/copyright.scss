@@ -1,15 +1,39 @@
 .copyright {
-  padding: 22px 20px 0 20px;
   display: flex;
+  align-items: center;
+
+  padding-top: 22px;
+  padding-bottom: 20px;
 }
 
 .copyright__name {
-  font-family: $arial;
-  font-size: $font-size-medium;
-  line-height: 16px;
+  margin: 0;
   margin-right: auto;
+
+  font-size: $font-size-medium;
+  font-family: $arial;
+  line-height: 16px;
 }
 
 .copyright__logo {
+  display: flex;
+
   font-size: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    align-items: center;
+    padding: 0;
+  }
+
+  .copyright__name {
+    align-items: center;
+    margin: 0;
+    margin-right: 15px;
+  }
+
+  .copyright__logo {
+    display: flex;
+  }
 }

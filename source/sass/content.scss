@@ -1,5 +1,5 @@
 .content {
-  width: 320px;
+  min-width: 320px;
   margin: auto;
 }
 
@@ -8,11 +8,11 @@
 }
 
 .content__programs {
-  margin-bottom: 22px;
+  margin-bottom: 32px;
 }
 
 .content__how-work {
-  margin-bottom: 22px;
+  margin-bottom: 42px;
 }
 
 .content__title {
@@ -32,4 +32,20 @@
 .content__wrapper {
   margin-bottom: 39px;
   padding: 10px 20px 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .content__programs {
+    margin-bottom: 50px;
+  }
+
+  .content__how-work {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .content__presentation {
+    margin-bottom: 80px;
+  }
 }

@@ -2,33 +2,36 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Cat Energy</title>
 </head>
 <body>
-<div class="page">
+<div class="page page__no-js">
   <header class="page__header header">
-    <a class="header__logo" href="index.html">
-      Cat Energy
-      <img class="header__picture" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="39">
-    </a>
-    <nav class="header__menu menu menu--open">
-      <button class="menu__button" type="button">
-        <span class="menu__icon menu__icon--open">Открыть</span>
-        <span class="menu__icon menu__icon--close">Закрыть</span>
-      </button>
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link" href="index.html">Главная</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link menu__link--active">Подор программы</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__wrapper">
+      <a class="header__logo" href="index.html">
+        Cat Energy
+        <img class="header__picture" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="39">
+      </a>
+      <nav class="header__menu menu menu--open">
+        <button class="menu__button" type="button">
+          <span class="menu__icon menu__icon--open">Открыть</span>
+          <span class="menu__icon menu__icon--close">Закрыть</span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--active">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="page__content content">
     <div class="content__wrapper">
@@ -39,19 +42,19 @@
       <fieldset class="form__groups">
         <label class="form__label field-input">
           <span class="field-input__text">Имя:*</span>
-          <div class="field-input__conteiner">
+          <div class="field-input__container">
             <input class="field-input__input" name="nickname" type="text" autofocus required placeholder="Барсик">
           </div>
         </label>
         <label class="form__label field-input">
           <span class="field-input__text">Вес (кг):*</span>
-          <div class="field-input__conteiner">
+          <div class="field-input__container">
             <input class="field-input__input" name="weight" type="number" required placeholder="7">
           </div>
         </label>
         <label class="form__label field-input">
           <span class="field-input__text">Возраст (лет):</span>
-          <div class="field-input__conteiner">
+          <div class="field-input__container">
             <input class="field-input__input" name="age" type="number" placeholder="7">
           </div>
         </label>
@@ -77,14 +80,14 @@
         <legend class="form__legend title--small">Контактные данные (владельца кота)</legend>
         <label class="form__label field-input">
           <span class="field-input__text">E-mail:*</span>
-          <div class="field-input__conteiner">
+          <div class="field-input__container">
             <input class="field-input__input field-input__input--mail" type="email" name="mail" required placeholder="kuklachev@gmail.com">
             <img class="field-input__picture" src="img/icon-mail.svg" width="16" height="16">
           </div>
         </label>
         <label class="form__label field-input">
           <span class="field-input__text">Телефон:*</span>
-          <div class="field-input__conteiner">
+          <div class="field-input__container">
             <input class="field-input__input field-input__input--tel" type="tel" name="tel" required placeholder="8 (960) 900-60-90">
             <img class="field-input__picture" src="img/icon-phone.svg" width="16" height="16">
           </div>
@@ -125,47 +128,54 @@
 </main>
   <footer class="page__footer footer">
     <section class="footer__contacts contacts">
-      <div class="contacts__wrapper">
-        <P class="contacts__cooperation">Приглашаем к сотрудничеству дилеров!</P>
-        <P class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</P>
+      <div class="contacts__wrapper container">
+        <div class="contacts__cutaway">
+          <P class="contacts__cooperation">Приглашаем к&nbspсотрудничеству дилеров!</P>
+          <P class="contacts__address">ул. Большая Конюшенная, д.&nbsp19/8
+            <span>Санкт-Петербург</span>
+          </P>
+        </div>
       </div>
       <div class="contacts__map">
-        <img class="contacts__picture-map" width="320" height="400" src="img/bg-map-mobile@1x.png" alt="Карта местонахождения магазина">
+        <img class="contacts__picture-map" width="1440" height="400" src="img/bg-map-desktop@1x.png"
+             alt="Карта местонахождения магазина">
       </div> <!--todo нужно слить слои картинки и пин-->
     </section>
-    <div class="footer__logo">
-      <a class="footer__logo-link" href="index.html">
-        Cat Energy
-        <img src="img/logo-footer.svg" height="94" width="128" alt="Cat Energy" class="footer__logo-picture">
-      </a>
-    </div>
-    <ul class="footer__socials socials">
-      <li class="socials__item">
-        <a class="socials__link" href="#">
-          Vkontakte
-          <img src="img/icon-vk.svg" alt="Vkontakte" width="22" height="12">
+    <div class="footer__wrapper container">
+      <div class="footer__logo">
+        <a class="footer__logo-link" href="index.html">
+          Cat Energy
+          <img src="img/logo-footer.svg" height="55" width="128" alt="Cat Energy" class="footer__logo-picture">
         </a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link" href="#">
-          instagram
-          <img src="img/icon-insta.svg" alt="instagram" width="17" height="17">
-        </a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link" href="#">
-          Facebook
-          <img src="img/icon-fb.svg" alt="Facebook" width="10" height="19">
-        </a> <!--todo когда сделаю свг измеить цвет-->
-      </li>
-    </ul>
-    <div class="footer__copyright copyright">
-      <p class="copyright__name">HTML Academy</p>
-      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        HTML Academy
-        <img src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="40" height="40"> <!--todo когда сделаю
+      </div>
+      <ul class="footer__socials socials">
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            Vkontakte
+            <img src="img/icon-vk.svg" alt="Vkontakte" width="22" height="12">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            instagram
+            <img src="img/icon-insta.svg" alt="instagram" width="17" height="17">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            Facebook
+            <img src="img/icon-fb.svg" alt="Facebook" width="10" height="19">
+          </a> <!--todo когда сделаю свг измеить цвет-->
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <p class="copyright__name">HTML Academy</p>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+          <img src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="40" height="40"> <!--todo когда сделаю
         свгизмеить цвет-->
-      </a>
+        </a>
+      </div>
     </div>
   </footer>
 </div>

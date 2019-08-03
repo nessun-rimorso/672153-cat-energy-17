@@ -1,13 +1,47 @@
 .header {
+  position: relative;
+}
+
+.header__wrapper {
   padding: 0;
-  width: 320px;
-  margin: auto;
+
   border-bottom: 1px solid $grey;
 }
 
 .header__logo {
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+  padding: 11px 20px;
+
   font-size: 0;
-  margin: 11px 20px;
-  display: block;
+
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .header__wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 auto;
+    padding: 24px 30px 63px;
+    box-sizing: border-box;
+
+    border: none;
+  }
+
+  .header__logo {
+    width: 174px;
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__wrapper {
+    width: $desktop-width;
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
 }
