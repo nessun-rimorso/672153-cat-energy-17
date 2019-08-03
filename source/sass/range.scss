@@ -5,6 +5,8 @@
 }
 
 .range__text-btn {
+  position: relative;
+
   font-size: $font-size-medium;
   text-transform: uppercase;
   line-height: 20px;
@@ -46,6 +48,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .range {
+    position: relative;
+    z-index: 1;
+  }
+
   .range__text-btn {
     padding: 0;
     padding-bottom: 6px;
@@ -95,5 +102,11 @@
 
     border-radius: 50%;
     background: $green;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range {
+    justify-content: flex-end;
   }
 }

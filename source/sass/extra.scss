@@ -43,6 +43,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .extra__wrapper {
+    padding-top: 0;
+  }
+
   .extra__products {
     border: solid 1px $black-lighter;
   }

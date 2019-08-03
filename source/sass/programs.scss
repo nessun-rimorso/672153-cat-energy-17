@@ -13,3 +13,20 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programs__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .programs__item {
+    width: 570px;
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
+
+  .programs__item:last-of-type {
+    margin-right: 0;
+  }
+}

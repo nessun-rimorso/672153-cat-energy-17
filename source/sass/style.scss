@@ -31,3 +31,7 @@
 @import "checkbox-btn";
 @import "field-input";
 @import "textarea";
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}

@@ -96,3 +96,9 @@
     margin-bottom: 37px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .how-work__item:last-of-type {
+    margin-right: 0;
+  }
+}

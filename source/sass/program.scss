@@ -104,8 +104,8 @@
   .program__picture {
     position: absolute;
     top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%);
+    right: 60px;
+    transform: translateY(-50%);
 
     width: 200px;
     height: 200px;
@@ -124,6 +124,10 @@
 
     font-size: $font-size-medium;
     line-height: 24px;
+  }
+
+  .program__picture--panther ~ .program__description {
+    padding-right: 29px;
   }
 
   .program__link {

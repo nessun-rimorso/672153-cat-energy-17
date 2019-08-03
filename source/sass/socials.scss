@@ -6,7 +6,8 @@
   padding: 21px 0;
   margin: 0;
 
-  border-bottom: $grey-yet solid 1px;
+  border-bottom: $grey-pff solid 1px;
+  border-top: $grey-pff solid 1px;
   list-style: none;
 }
 
@@ -25,6 +26,7 @@
 @media (min-width: $tablet-width) {
   .socials {
     padding: 0;
+    border: none;
   }
 
   .socials__item {

@@ -1,5 +1,5 @@
 .content {
-  width: 320px;
+  min-width: 320px;
   margin: auto;
 }
 
@@ -35,15 +35,17 @@
 }
 
 @media (min-width: $tablet-width) {
-  .content {
-    width: $tablet-width;
-  }
-
   .content__programs {
     margin-bottom: 50px;
   }
 
   .content__how-work {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .content__presentation {
+    margin-bottom: 80px;
   }
 }
