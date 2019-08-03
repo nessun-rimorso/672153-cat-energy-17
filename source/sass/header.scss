@@ -1,4 +1,8 @@
 .header {
+  position: relative;
+}
+
+.header__wrapper {
   padding: 0;
 
   border-bottom: 1px solid $grey;
@@ -16,7 +20,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .header {
+  .header__wrapper {
     display: flex;
     align-items: flex-end;
     margin: 0 auto;
@@ -35,7 +39,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .header {
+  .header__wrapper {
     width: $desktop-width;
     padding-top: 50px;
     padding-bottom: 80px;

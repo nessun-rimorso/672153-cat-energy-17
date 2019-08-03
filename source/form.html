@@ -9,27 +9,29 @@
 <body>
 <div class="page page__no-js">
   <header class="page__header header">
-    <a class="header__logo" href="index.html">
-      Cat Energy
-      <img class="header__picture" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="39">
-    </a>
-    <nav class="header__menu menu menu--open">
-      <button class="menu__button" type="button">
-        <span class="menu__icon menu__icon--open">Открыть</span>
-        <span class="menu__icon menu__icon--close">Закрыть</span>
-      </button>
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link" href="index.html">Главная</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link menu__link--active">Подор программы</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__wrapper">
+      <a class="header__logo" href="index.html">
+        Cat Energy
+        <img class="header__picture" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="39">
+      </a>
+      <nav class="header__menu menu menu--open">
+        <button class="menu__button" type="button">
+          <span class="menu__icon menu__icon--open">Открыть</span>
+          <span class="menu__icon menu__icon--close">Закрыть</span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--active">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="page__content content">
     <div class="content__wrapper">
@@ -127,13 +129,16 @@
   <footer class="page__footer footer">
     <section class="footer__contacts contacts">
       <div class="contacts__wrapper container">
-        <P class="contacts__cooperation">Приглашаем к&nbspсотрудничеству дилеров!</P>
-        <P class="contacts__address">ул. Большая Конюшенная, д.&nbsp19/8
-          <span>Санкт-Петербург</span>
-        </P>
+        <div class="contacts__cutaway">
+          <P class="contacts__cooperation">Приглашаем к&nbspсотрудничеству дилеров!</P>
+          <P class="contacts__address">ул. Большая Конюшенная, д.&nbsp19/8
+            <span>Санкт-Петербург</span>
+          </P>
+        </div>
       </div>
       <div class="contacts__map">
-        <img class="contacts__picture-map" width="320" height="400" src="img/bg-map-mobile@1x.png" alt="Карта местонахождения магазина">
+        <img class="contacts__picture-map" width="1440" height="400" src="img/bg-map-desktop@1x.png"
+             alt="Карта местонахождения магазина">
       </div> <!--todo нужно слить слои картинки и пин-->
     </section>
     <div class="footer__wrapper container">

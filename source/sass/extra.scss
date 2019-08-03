@@ -8,6 +8,7 @@
 
 .extra__products {
   margin: 0;
+  margin-bottom: 39px;
   padding: 0;
 
   list-style: none;
@@ -49,6 +50,7 @@
 
   .extra__products {
     border: solid 1px $black-lighter;
+    margin-bottom: 70px;
   }
 
   .extra__title {
@@ -90,5 +92,46 @@
   .extra__button {
     width: 100%;
     margin-top: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra__products {
+    margin-bottom: 0;
+  }
+
+  .extra__row {
+    display: flex;
+  }
+
+  .extra__products {
+    margin-right: 80px;
+    flex-grow: 1;
+
+    border-left: none;
+    border-right: none;
+  }
+
+  .extra__item-wrapper {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    padding: 16px 0;
+  }
+
+  .extra__button {
+    width: 245px;
+    margin-top: 0;
+  }
+
+  .extra__product {
+    font-size: $font-size-larger;
+  }
+
+  .extra__table {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-right: 39px;
+    margin-left: auto;
   }
 }
