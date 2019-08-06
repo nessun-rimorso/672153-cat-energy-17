@@ -1,3 +1,7 @@
+.form {
+  overflow: hidden;
+}
+
 .form__description {
   margin: 0;
   margin-bottom: 39px;
@@ -49,7 +53,7 @@
   line-height: 24px;
 }
 
-.form__wrapper {
+.form__submit {
   padding: 0 20px;
   margin-bottom: 34px;
 }
@@ -107,7 +111,7 @@
     border: 1px solid $grey-lighter;
   }
 
-  .form__groups-wrapper {
+  .form__checkbox-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -115,12 +119,12 @@
     margin-bottom: -30px;
   }
 
-  .form__groups-wrapper .form__label {
+  .form__checkbox-wrapper .form__label {
     margin-right: 0;
     margin-bottom: 30px;
   }
 
-  .form__wrapper {
+  .form__submit {
     display: flex;
     align-items: center;
     margin-bottom: 70px;
@@ -139,5 +143,53 @@
 
   .form__text {
     font-size: $font-size-medium;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__row {
+    display: flex;
+  }
+
+  .form__groups:last-of-type {
+    margin-bottom: 60px;
+  }
+
+  .form__row .form__groups {
+    width: 50%;
+    margin-right: 80px;
+    margin-bottom: 70px;
+  }
+
+  .form__row .form__groups:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .form__checkbox-wrapper {
+    flex-wrap: nowrap;
+  }
+
+  .form__button {
+    width: 568px;
+    margin-right: 80px;
+  }
+
+  .form__contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__contacts-wrapper .form__label {
+    width: 50%;
+    margin-bottom: 0;
+    margin-right: 78px;
+  }
+
+  .form__contacts-wrapper .form__label:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .form__submit {
+    margin-bottom: 82px;
   }
 }

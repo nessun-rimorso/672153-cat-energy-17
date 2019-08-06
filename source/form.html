@@ -33,96 +33,102 @@
       </nav>
     </div>
   </header>
-  <main class="page__content container page-form">
-    <h1 class="page-form__title title">Подбор программы</h1>
+  <main class="page__content page-form">
+    <h1 class="page-form__title container title">Подбор программы</h1>
     <form class="page-form__form form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="form__description">Заполните анкету и мы подберем <br> программу питания для вашего кота</p>
-      <fieldset class="form__groups">
-        <label class="form__label field-input">
-          <span class="field-input__text">Имя:*</span>
-          <div class="field-input__container">
-            <input class="field-input__input" name="nickname" type="text" autofocus required placeholder="Барсик">
-          </div>
-        </label>
-        <label class="form__label field-input">
-          <span class="field-input__text">Вес (кг):*</span>
-          <div class="field-input__container">
-            <input class="field-input__input" name="weight" type="number" required placeholder="7">
-          </div>
-        </label>
-        <label class="form__label field-input">
-          <span class="field-input__text">Возраст (лет):</span>
-          <div class="field-input__container">
-            <input class="field-input__input" name="age" type="number" placeholder="7">
-          </div>
-        </label>
-      </fieldset>
-      <fieldset class="form__groups form__groups--border">
-        <label class="form-personal__label--min-margin radio-btn">
-          <input class="radio-btn__input" type="radio" name="radio-btn" value="slim" checked>
-          <span class="radio-btn__icon"></span>
-          Похудение
-        </label>
-        <label class="form-personal__label--min-margin radio-btn">
-          <input class="radio-btn__input" type="radio" name="radio-btn" value="hard">
-          <span class="radio-btn__icon"></span>
-          Набор массы
-        </label>
-        <label class="form__label radio-btn">
-          <input class="radio-btn__input" type="radio" name="radio-btn" value="help">
-          <span class="radio-btn__icon"></span>
-          Не знаю (Нужен ваш совет)
-        </label>
-      </fieldset>
-      <fieldset class="form__groups">
-        <legend class="form__legend title--small">Контактные данные (владельца кота)</legend>
-        <label class="form__label field-input">
-          <span class="field-input__text">E-mail:*</span>
-          <div class="field-input__container">
-            <input class="field-input__input field-input__input--mail" type="email" name="mail" required placeholder="kuklachev@gmail.com">
-            <img class="field-input__picture" src="img/icon-mail.svg" width="16" height="16">
-          </div>
-        </label>
-        <label class="form__label field-input">
-          <span class="field-input__text">Телефон:*</span>
-          <div class="field-input__container">
-            <input class="field-input__input field-input__input--tel" type="tel" name="tel" required placeholder="8 (960) 900-60-90">
-            <img class="field-input__picture" src="img/icon-phone.svg" width="16" height="16">
-          </div>
-        </label>
-      </fieldset>
-      <fieldset class="form__groups">
-        <legend class="form__legend title--small">Комментарий</legend>
-        <textarea class="form__textarea textarea"  name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-      </fieldset>
-      <fieldset class="form__groups">
-        <legend class="form__legend title--small">Дополнительно</legend>
-        <div class="form__groups-wrapper">
-          <label class="form__label checkbox-btn">
-            <input class="checkbox-btn__input" type="checkbox" value="sugar" name="sugar" checked>
-            <span class="checkbox-btn__icon"></span>
-            Сахарозаменитель
-          </label>
-          <label class="form__label checkbox-btn">
-            <input class="checkbox-btn__input" type="checkbox" value="water" name="water">
-            <span class="checkbox-btn__icon"></span>
-            Питьевая вода
-          </label>
-          <label class="form__label checkbox-btn">
-            <input class="checkbox-btn__input" type="checkbox" value="milk" name="milk">
-            <span class="checkbox-btn__icon"></span>
-            Молоко
-          </label>
-          <label class="form__label checkbox-btn">
-            <input class="checkbox-btn__input" type="checkbox" value="vitamins" name="vitamins">
-            <span class="checkbox-btn__icon"></span>
-            Витамины
-          </label>
+      <div class="form__wrapper container">
+        <p class="form__description">Заполните анкету и мы подберем <br> программу питания для вашего кота</p>
+        <div class="form__row">
+          <fieldset class="form__groups">
+            <label class="form__label field-input">
+              <span class="field-input__text">Имя:*</span>
+              <div class="field-input__container">
+                <input class="field-input__input" name="nickname" type="text" autofocus required placeholder="Барсик">
+              </div>
+            </label>
+            <label class="form__label field-input">
+              <span class="field-input__text">Вес (кг):*</span>
+              <div class="field-input__container">
+                <input class="field-input__input" name="weight" type="number" required placeholder="7">
+              </div>
+            </label>
+            <label class="form__label field-input">
+              <span class="field-input__text">Возраст (лет):</span>
+              <div class="field-input__container">
+                <input class="field-input__input" name="age" type="number" placeholder="7">
+              </div>
+            </label>
+          </fieldset>
+          <fieldset class="form__groups form__groups--border">
+            <label class="form-personal__label--min-margin radio-btn">
+              <input class="radio-btn__input" type="radio" name="radio-btn" value="slim" checked>
+              <span class="radio-btn__icon"></span>
+              Похудение
+            </label>
+            <label class="form-personal__label--min-margin radio-btn">
+              <input class="radio-btn__input" type="radio" name="radio-btn" value="hard">
+              <span class="radio-btn__icon"></span>
+              Набор массы
+            </label>
+            <label class="form__label radio-btn">
+              <input class="radio-btn__input" type="radio" name="radio-btn" value="help">
+              <span class="radio-btn__icon"></span>
+              Не знаю (Нужен ваш совет)
+            </label>
+          </fieldset>
         </div>
-      </fieldset>
-      <div class="form__wrapper">
-        <button class="form__button button button--green" type="submit">Отправить заявку</button>
-        <span class="form__text">* — Обязательные поля</span>
+        <fieldset class="form__groups">
+          <legend class="form__legend title--small">Контактные данные (владельца кота)</legend>
+          <div class="form__contacts-wrapper">
+            <label class="form__label field-input">
+              <span class="field-input__text">E-mail:*</span>
+              <div class="field-input__container">
+                <input class="field-input__input field-input__input--mail" type="email" name="mail" required placeholder="kuklachev@gmail.com">
+                <img class="field-input__picture" src="img/icon-mail.svg" width="16" height="16">
+              </div>
+            </label>
+            <label class="form__label field-input">
+              <span class="field-input__text">Телефон:*</span>
+              <div class="field-input__container">
+                <input class="field-input__input field-input__input--tel" type="tel" name="tel" required placeholder="8 (960) 900-60-90">
+                <img class="field-input__picture" src="img/icon-phone.svg" width="16" height="16">
+              </div>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__groups">
+          <legend class="form__legend title--small">Комментарий</legend>
+          <textarea class="form__textarea textarea"  name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="form__groups">
+          <legend class="form__legend title--small">Дополнительно</legend>
+          <div class="form__checkbox-wrapper">
+            <label class="form__label checkbox-btn">
+              <input class="checkbox-btn__input" type="checkbox" value="sugar" name="sugar" checked>
+              <span class="checkbox-btn__icon"></span>
+              Сахарозаменитель
+            </label>
+            <label class="form__label checkbox-btn">
+              <input class="checkbox-btn__input" type="checkbox" value="water" name="water">
+              <span class="checkbox-btn__icon"></span>
+              Питьевая вода
+            </label>
+            <label class="form__label checkbox-btn">
+              <input class="checkbox-btn__input" type="checkbox" value="milk" name="milk">
+              <span class="checkbox-btn__icon"></span>
+              Молоко
+            </label>
+            <label class="form__label checkbox-btn">
+              <input class="checkbox-btn__input" type="checkbox" value="vitamins" name="vitamins">
+              <span class="checkbox-btn__icon"></span>
+              Витамины
+            </label>
+          </div>
+        </fieldset>
+        <div class="form__submit">
+          <button class="form__button button button--green" type="submit">Отправить заявку</button>
+          <span class="form__text">* — Обязательные поля</span>
+        </div>
       </div>
     </form>
 </main>
@@ -137,8 +143,7 @@
         </div>
       </div>
       <div class="contacts__map">
-        <img class="contacts__picture-map" width="1440" height="400" src="img/bg-map-desktop@1x.png"
-             alt="Карта местонахождения магазина">
+        <img class="contacts__picture-map" width="1440" height="400" src="img/bg-map-desktop@1x.png" alt="Карта местонахождения магазина">
       </div> <!--todo нужно слить слои картинки и пин-->
     </section>
     <div class="footer__wrapper container">

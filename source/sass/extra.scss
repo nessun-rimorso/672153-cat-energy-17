@@ -98,18 +98,15 @@
 @media (min-width: $desktop-width) {
   .extra__products {
     margin-bottom: 0;
-  }
-
-  .extra__row {
-    display: flex;
-  }
-
-  .extra__products {
     margin-right: 80px;
     flex-grow: 1;
 
     border-left: none;
     border-right: none;
+  }
+
+  .extra__row {
+    display: flex;
   }
 
   .extra__item-wrapper {

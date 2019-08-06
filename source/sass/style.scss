@@ -33,6 +33,8 @@
 @import "field-input";
 @import "textarea";
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
