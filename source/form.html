@@ -33,12 +33,10 @@
       </nav>
     </div>
   </header>
-  <main class="page__content content">
-    <div class="content__wrapper">
-      <h1 class="content__title title">Подбор программы</h1>
-      <p class="content__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-    </div>
-    <form class="content__form form" action="https://echo.htmlacademy.ru" method="post">
+  <main class="page__content container page-form">
+    <h1 class="page-form__title title">Подбор программы</h1>
+    <form class="page-form__form form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="form__description">Заполните анкету и мы подберем <br> программу питания для вашего кота</p>
       <fieldset class="form__groups">
         <label class="form__label field-input">
           <span class="field-input__text">Имя:*</span>
@@ -99,26 +97,28 @@
       </fieldset>
       <fieldset class="form__groups">
         <legend class="form__legend title--small">Дополнительно</legend>
-        <label class="form__label checkbox-btn">
-          <input class="checkbox-btn__input" type="checkbox" value="sugar" name="sugar" checked>
-          <span class="checkbox-btn__icon"></span>
-          Сахарозаменитель
-        </label>
-        <label class="form__label checkbox-btn">
-          <input class="checkbox-btn__input" type="checkbox" value="water" name="water">
-          <span class="checkbox-btn__icon"></span>
-          Питьевая вода
-        </label>
-        <label class="form__label checkbox-btn">
-          <input class="checkbox-btn__input" type="checkbox" value="milk" name="milk">
-          <span class="checkbox-btn__icon"></span>
-          Молоко
-        </label>
-        <label class="form__label checkbox-btn">
-          <input class="checkbox-btn__input" type="checkbox" value="vitamins" name="vitamins">
-          <span class="checkbox-btn__icon"></span>
-          Витамины
-        </label>
+        <div class="form__groups-wrapper">
+          <label class="form__label checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" value="sugar" name="sugar" checked>
+            <span class="checkbox-btn__icon"></span>
+            Сахарозаменитель
+          </label>
+          <label class="form__label checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" value="water" name="water">
+            <span class="checkbox-btn__icon"></span>
+            Питьевая вода
+          </label>
+          <label class="form__label checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" value="milk" name="milk">
+            <span class="checkbox-btn__icon"></span>
+            Молоко
+          </label>
+          <label class="form__label checkbox-btn">
+            <input class="checkbox-btn__input" type="checkbox" value="vitamins" name="vitamins">
+            <span class="checkbox-btn__icon"></span>
+            Витамины
+          </label>
+        </div>
       </fieldset>
       <div class="form__wrapper">
         <button class="form__button button button--green" type="submit">Отправить заявку</button>

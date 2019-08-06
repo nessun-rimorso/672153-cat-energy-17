@@ -1,0 +1,21 @@
+.page-form {
+  min-width: 320px;
+  margin: auto;
+}
+
+.page-form__title {
+  margin-bottom: 20px;
+  padding-top: 10px;
+
+  line-height: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-form__title {
+    margin-bottom: 50px;
+  }
+
+  .page-form__form {
+    padding: 0 40px;
+  }
+}

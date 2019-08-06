@@ -39,5 +39,24 @@
 
   border-bottom: 2px solid $green;
   border-right: 2px solid $green;
-  transform: translate(-50%, -50%) rotate(35deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox-btn {
+    width: 45%;
+
+    font-size: $font-size-larger;
+    line-height: 20px;
+  }
+
+  .checkbox-btn__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .checkbox-btn__input:checked ~ .checkbox-btn__icon::before {
+    width: 12px;
+    height: 22px;
+  }
 }

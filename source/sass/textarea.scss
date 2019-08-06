@@ -1,7 +1,7 @@
 .textarea {
   margin: 0;
   padding: 13px;
-  width: 280px;
+  width: 100%;
   min-height: 150px;
   box-sizing: border-box;
 
@@ -15,4 +15,11 @@
 .textarea::placeholder {
   color: $main-color;
   font-size: $font-size-medium;
+}
+
+@media (min-width: $tablet-width) {
+  .textarea::placeholder {
+    font-size: $font-size-larger;
+    line-height: 30px;
+  }
 }

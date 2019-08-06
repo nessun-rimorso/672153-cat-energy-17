@@ -42,3 +42,21 @@
   background: $green;
   border-radius: 50%;
 }
+
+@media (min-width: $tablet-width) {
+  .radio-btn {
+    font-size: $font-size-larger;
+    line-height: 20px;
+  }
+
+  .radio-btn__icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  .radio-btn__input:checked ~ .radio-btn__icon::before {
+    width: 18px;
+    height: 18px;
+  }
+}

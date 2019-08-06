@@ -67,11 +67,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .product-else {
+    display: flex;
+    flex-direction: column;
+  }
+
   .product-else__title {
     margin: 0 50px 28px;
   }
 
   .product-else__text {
     margin: 0 38px 85px;
+  }
+
+  .product-else__button {
+    margin-top: auto;
   }
 }
