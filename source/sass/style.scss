@@ -26,12 +26,15 @@
 @import "product-else";
 @import "extra";
 @import "promo";
+@import "page-form";
 @import "form";
 @import "radio-btn";
 @import "checkbox-btn";
 @import "field-input";
 @import "textarea";
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }

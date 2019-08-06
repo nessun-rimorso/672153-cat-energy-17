@@ -40,3 +40,14 @@
 
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .field-input {
+    font-size: $font-size-larger;
+    line-height: 20px;
+  }
+
+  .field-input__input {
+    padding: 15px 60px 13px 20px;
+  }
+}
