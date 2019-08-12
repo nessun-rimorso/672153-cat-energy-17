@@ -8,9 +8,25 @@
   transform: translateX(-50%);
 
   display: block;
+  width: 31px;
+  height: 31px;
   margin-bottom: 25px;
+}
 
-  fill: $grey-light;
+.product-else__picture::before,
+.product-else__picture::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+
+  display: block;
+  width: 3px;
+  height: 100%;
+  background: $grey-light;
+}
+
+.product-else__picture::after {
+  transform: rotate(90deg);
 }
 
 .product-else__title {

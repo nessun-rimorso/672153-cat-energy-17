@@ -17,8 +17,24 @@
   padding: 15px 40px 15px 16px;
   box-sizing: border-box;
 
-  border: 1px solid $grey-lighter;
+  border: 1px solid rgba($grey-lighter, 0.5);
   text-overflow: ellipsis;
+  transition: 200ms ease;
+  outline: none;
+}
+
+.field-input__input:hover {
+  border: 1px solid $grey-lighter;
+}
+
+.field-input__input:focus {
+  border: 1px solid $main-color;
+  box-shadow: inset 0 0 0 1px $main-color;
+}
+
+.field-input__input:invalid {
+  border: 1px solid $pink;
+  box-shadow: inset 0 0 0 1px $pink;
 }
 
 .field-input__input::placeholder {
@@ -39,6 +55,15 @@
   transform: translate(-50%, -50%);
 
   display: block;
+  fill: $black;
+}
+
+.field-input__input:focus ~ .field-input__picture {
+  fill: $green;
+}
+
+.field-input__input:invalid ~ .field-input__picture {
+  fill: $pink;
 }
 
 @media (min-width: $tablet-width) {

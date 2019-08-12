@@ -12,7 +12,8 @@
 }
 
 .checkbox-btn__input {
-  visibility: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
   margin-left: -13px;
 }
 
@@ -40,6 +41,16 @@
   border-bottom: 2px solid $green;
   border-right: 2px solid $green;
   transform: translate(-50%, -50%) rotate(45deg);
+  transition: 200ms ease;
+}
+
+.checkbox-btn:hover .checkbox-btn__icon,
+.checkbox-btn:focus .checkbox-btn__icon {
+  border: 1px solid $grey-baba;
+}
+
+.checkbox-btn:active {
+  opacity: 0.5;
 }
 
 @media (min-width: $tablet-width) {
