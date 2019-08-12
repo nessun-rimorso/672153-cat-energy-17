@@ -1,19 +1,19 @@
 .slider__container {
   position: relative;
 
-  width: 320px;
-  margin-left: -20px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   min-height: 240px;
 }
 
 .slider__picture {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
   display: block;
-  margin: 0 auto 35px;
+  margin-bottom: 35px;
+  margin-left: -20px;
 }
 
 .slider__picture:nth-child(2) {
@@ -63,6 +63,7 @@
   .slider__container {
     z-index: 1;
 
+    width: 100%;
     min-height: 348px;
     margin: 0;
   }
@@ -71,6 +72,8 @@
     left: 50%;
     transform: translateX(-50%);
 
+    width: 690px;
+    height: 517px;
     margin-top: -170px;
   }
 

@@ -21,6 +21,31 @@
 
 .socials__link {
   font-size: 0;
+
+  outline: none;
+  transition: 200ms ease;
+}
+
+.socials__link:active {
+  opacity: 0.3;
+}
+
+.socials__link svg,
+.socials__link path,
+.socials__link circle {
+  fill: $grey-44;
+}
+
+.socials__link:hover svg,
+.socials__link:focus svg,
+.socials__link:hover path,
+.socials__link:focus path,
+.socials__link:hover circle,
+.socials__link:focus circle,
+.socials__link:active svg,
+.socials__link:active path,
+.socials__link:active circle {
+  fill: $green;
 }
 
 @media (min-width: $tablet-width) {
@@ -35,5 +60,10 @@
 
   .socials__item:last-of-type {
     margin-right: 0;
+  }
+
+  .socials svg {
+    width: 30px;
+    height: 28px;
   }
 }

@@ -16,8 +16,7 @@
   background-color: $green;
 }
 
-.program__picture--panther::before {
-  content: "";
+.program__picture--panther svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -25,13 +24,9 @@
 
   width: 67px;
   height: 28px;
-
-  background-repeat: no-repeat;
-  background-image: url("../img/icon-cat-pro.svg");
 }
 
-.program__picture--slim::before {
-  content: "";
+.program__picture--slim svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -39,9 +34,6 @@
 
   width: 35px;
   height: 49px;
-
-  background-repeat: no-repeat;
-  background-image: url("../img/icon-cat-slim.svg");
 }
 
 .program__title {
@@ -65,7 +57,8 @@
 .program__link {
   position: relative;
 
-  display: block;
+  display: flex;
+  align-items: center;
   min-width: 122px;
   padding: 20px 28px 20px 0;
 
@@ -78,20 +71,34 @@
   box-sizing: border-box;
   border-top: $grey-yet solid 1px;
   cursor: pointer;
+  transition: 200ms ease;
+  outline: none;
+}
+
+.program__link:active {
+  opacity: 0.3;
 }
 
 .program__link::after {
   content: "";
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 0;
   right: 0;
-  transform: translateY(-50%);
 
   display: block;
   width: 25px;
   height: 12px;
+  margin-left: 25px;
 
   background-image: url("../img/icon-right-arrow-long.svg");
+  transition: 200ms ease;
+}
+
+.program__link:hover::after,
+.program__link:focus .program__link::after {
+  width: 34px;
+  height: 12px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -141,13 +148,45 @@
     border-top: none;
   }
 
-  .program__picture--slim::before {
+  .program__picture--slim svg {
     width: 141px;
     height: 194px;
   }
 
-  .program__picture--panther::before {
+  .program__picture--panther svg {
     width: 268px;
     height: 113px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program__wrapper {
+    align-items: center;
+    padding: 47px 52px 67px;
+  }
+
+  .program__picture {
+    position: relative;
+    right: 0;
+    transform: none;
+
+    width: 100px;
+    height: 100px;
+    margin-right: 64px;
+    margin-bottom: 45px;
+  }
+
+  .program__picture--slim svg {
+    width: 71px;
+    height: 97px;
+  }
+
+  .program__picture--panther svg {
+    width: 134px;
+    height: 57px;
+  }
+
+  .program__description {
+    margin-bottom: 36px;
   }
 }

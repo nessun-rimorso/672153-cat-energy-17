@@ -12,7 +12,8 @@
 }
 
 .radio-btn__input {
-  visibility: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
   margin-left: -13px;
 }
 
@@ -26,6 +27,7 @@
 
   border: 1px solid $grey-lighter;
   border-radius: 50%;
+  transition: 200ms ease;
 }
 
 .radio-btn__input:checked ~ .radio-btn__icon::before {
@@ -41,6 +43,15 @@
 
   background: $green;
   border-radius: 50%;
+}
+
+.radio-btn:hover .radio-btn__icon,
+.radio-btn:focus .radio-btn__icon {
+  border: 1px solid $grey-baba;
+}
+
+.radio-btn:active {
+  opacity: 0.5;
 }
 
 @media (min-width: $tablet-width) {

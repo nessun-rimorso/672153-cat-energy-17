@@ -10,6 +10,8 @@
 
   box-sizing: border-box;
   border: none;
+  transition: 200ms ease;
+  outline: none;
 }
 
 .button--green {
@@ -17,7 +19,25 @@
   background-color: $green;
 }
 
+.button--green:hover,
+.button--green:focus {
+  background-color: $green-darken;
+}
+
+.button--green:active {
+  color: rgba($white, 0.3);
+}
+
 .button--grey {
   color: $main-color;
   background-color: $grey-light;
+}
+
+.button--grey:hover,
+.button--grey:focus {
+  background-color: $grey-ebeb;
+}
+
+.button--grey:active {
+  color: rgba($main-color, 0.3);
 }

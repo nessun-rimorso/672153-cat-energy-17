@@ -25,11 +25,34 @@
   position: relative;
 
   display: block;
+  height: 365px;
   margin: 0 auto;
+
+  object-fit: cover;
+  object-position: bottom;
 }
 
 .contacts__wrapper--white {
   background: $white;
+}
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map::before {
+  content: "";
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+
+  display: block;
+  width: 55px;
+  height: 53px;
+  background-image: url("../img/map-pin.png");
+  background-size: cover;
 }
 
 @media (min-width: $tablet-width) {
@@ -64,6 +87,14 @@
     width: 767px;
     height: 400px;
   }
+
+  .contacts__map::before {
+    top: 50%;
+    left: 49%;
+
+    width: 113px;
+    height: 106px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -89,5 +120,13 @@
 
   .contacts__picture-map {
     width: 1440px;
+  }
+
+  .contacts__map::before {
+    top: 50%;
+    left: 74%;
+
+    width: 113px;
+    height: 106px;
   }
 }

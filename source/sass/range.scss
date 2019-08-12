@@ -7,14 +7,28 @@
 .range__text-btn {
   position: relative;
 
+  padding: 0;
+
   font-size: $font-size-medium;
   text-transform: uppercase;
   line-height: 20px;
   color: $black-dark;
 
   border: none;
+  border-bottom: 1px solid transparent;
   background: transparent;
   cursor: pointer;
+  outline: none;
+  transition: 200ms ease;
+}
+
+.range__text-btn:hover,
+.range__text-btn:focus {
+  border-bottom: 1px solid rgba($black-dark, 0.23);
+}
+
+.range__text-btn:active {
+  border-bottom: 1px solid transparent;
 }
 
 .range__label {
@@ -27,6 +41,7 @@
   display: flex;
   width: 84px;
   height: 14px;
+  margin: 0 25px;
   padding: 3px 6px;
 
   box-sizing: border-box;
@@ -45,6 +60,17 @@
   background-color: $green;
 
   cursor: pointer;
+  transition: 200ms ease;
+}
+
+.range__button:hover,
+.range__button:focus {
+  box-shadow: 0 3px 5px 0 rgba($black-darken, 0.25);
+}
+
+.range__button:active {
+  border: solid 2px $green;
+  box-shadow: 0 4px 5px 0 rgba($black-darken, 0.3);
 }
 
 @media (min-width: $tablet-width) {
