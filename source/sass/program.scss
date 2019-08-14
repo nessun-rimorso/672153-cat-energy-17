@@ -87,10 +87,12 @@
 
   display: block;
   width: 25px;
-  height: 12px;
+  height: 15px;
   margin-left: 25px;
 
   background-image: url("../img/icon-right-arrow-long.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   transition: 200ms ease;
 }
 
