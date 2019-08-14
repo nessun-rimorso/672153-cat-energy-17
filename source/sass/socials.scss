@@ -34,6 +34,7 @@
 .socials__link path,
 .socials__link circle {
   fill: $grey-44;
+  transition: 300ms ease;
 }
 
 .socials__link:hover svg,

@@ -155,8 +155,15 @@
         </div>
       </div>
       <div class="contacts__map">
-        <img class="contacts__picture-map" width="1440" height="400" src="img/bg-map-desktop@1x.png" alt="Карта местонахождения магазина">
-      </div> <!--todo нужно слить слои картинки и пин-->
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source media="(min-width: 320px)" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+          <source media="(min-width: 1280px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="contacts__picture-map" width="320" height="365" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта местонахождения магазина">
+        </picture>
+      </div>
     </section>
     <div class="footer__wrapper container">
       <div class="footer__logo">
