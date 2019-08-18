@@ -1,6 +1,7 @@
 .productions__title {
   line-height: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
+  margin-top: 15px;
 }
 
 .productions__list {
@@ -27,15 +28,29 @@
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .productions__list {
     margin: 0 -30px;
+    padding: 0 0 7px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .productions__title {
-    margin-bottom: 70px;
+    margin-bottom: 82px;
+    margin-top: 0;
   }
 
   .productions__list::after {
     content: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .productions__title {
+    margin-top: -5px;
+    margin-bottom: 83px;
+  }
+
+  .productions__list {
+    max-width: 1222px;
+    padding: 0 0 15px;
   }
 }

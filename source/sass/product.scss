@@ -16,7 +16,7 @@
 .product__link {
   display: block;
   padding-right: 50px;
-  margin-bottom: 18px;
+  margin-bottom: 13px;
 
   font-size: $font-size-medium;
   text-transform: uppercase;
@@ -32,7 +32,7 @@
 
 .product__description {
   width: 50%;
-  padding-top: 25px;
+  padding-top: 22px;
 }
 
 .product__table {
@@ -85,7 +85,7 @@
 
   .product__link {
     width: 170px;
-    margin: 0 auto 28px;
+    margin: 0 auto 17px;
     padding-right: 0;
 
     font-size: $font-size-larger;
@@ -100,7 +100,7 @@
 
   .product__term,
   .product__determination {
-    padding: 10px 0;
+    padding: 9px 0 6px;
 
     border-bottom: 1px solid $black-lighter;
   }
