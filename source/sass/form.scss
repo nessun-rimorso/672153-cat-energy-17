@@ -3,8 +3,7 @@
 }
 
 .form__description {
-  margin: 0;
-  margin-bottom: 39px;
+  margin: 0 0 39px;
   padding-right: 30px;
 
   text-transform: uppercase;
@@ -15,9 +14,16 @@
   display: none;
 }
 
+.form__row .form__groups:first-of-type {
+  margin-bottom: 22px;
+}
+
+.form__row .form__groups:last-of-type {
+  margin-bottom: 27px;
+}
+
 .form__groups {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
   padding: 0;
   display: flex;
 
@@ -25,11 +31,19 @@
 }
 
 .form__groups:first-of-type {
-  margin-bottom: 23px;
+  margin-bottom: 28px;
+}
+
+.form__groups:last-of-type {
+  margin-bottom: 35px;
 }
 
 .form__label {
   margin-bottom: 14px;
+}
+
+.form__checkbox-wrapper .form__label {
+  margin-bottom: 12px;
 }
 
 .form-personal__label--min-margin {
@@ -48,19 +62,18 @@
 }
 
 .form__legend {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 
   line-height: 24px;
 }
 
 .form__submit {
-  padding: 0 20px;
-  margin-bottom: 34px;
+  margin-bottom: 29px;
 }
 
 .form__button {
   width: 100%;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 }
 
 .form__text {
@@ -73,7 +86,7 @@
 
 @media (min-width: $tablet-width) {
   .form__description {
-    margin-bottom: 69px;
+    margin-bottom: 66px;
 
     font-size: $font-size-larger;
     line-height: 30px;
@@ -85,11 +98,19 @@
 
   .form__legend {
     margin-left: -40px;
-    margin-bottom: 70px;
+    margin-bottom: 82px;
   }
 
   .form__label {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
+  }
+
+  .form__row .form__groups:first-of-type {
+    margin-bottom: 70px;
+  }
+
+  .form__row .form__groups:last-of-type {
+    margin-bottom: 82px;
   }
 
   .form__groups {
@@ -121,7 +142,7 @@
 
   .form__checkbox-wrapper .form__label {
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
 
   .form__submit {
@@ -152,13 +173,21 @@
   }
 
   .form__groups:last-of-type {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
+  }
+
+  .form__groups {
+    margin-bottom: 74px;
+  }
+
+  .form__row .form__groups:last-of-type {
+    margin-bottom: 76px;
   }
 
   .form__row .form__groups {
     width: 50%;
     margin-right: 80px;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
 
   .form__row .form__groups:nth-child(2n) {
@@ -167,6 +196,12 @@
 
   .form__checkbox-wrapper {
     flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .form__checkbox-wrapper .form__label {
+    margin-right: 108px;
+    min-width: 216px;
   }
 
   .form__button {
@@ -177,6 +212,7 @@
   .form__contacts-wrapper {
     display: flex;
     justify-content: space-between;
+    max-width: 1221px;
   }
 
   .form__contacts-wrapper .form__label {

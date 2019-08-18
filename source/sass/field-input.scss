@@ -10,11 +10,12 @@
 
 .field-input__text {
   padding-right: 15px;
+  flex-shrink: 0;
 }
 
 .field-input__input {
   width: 100%;
-  padding: 15px 40px 15px 16px;
+  padding: 13px 40px 12px 13px;
   box-sizing: border-box;
 
   border: 1px solid rgba($grey-lighter, 0.5);
@@ -76,5 +77,24 @@
 
   .field-input__input {
     padding: 15px 60px 13px 20px;
+  }
+
+  .field-input__text {
+    padding-right: 19px;
+  }
+
+  .field-input__picture {
+    right: 2%;
+  }
+
+  .field-input__input--tel ~ svg {
+    width: 22px;
+    height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-input__text {
+    padding-right: 23px;
   }
 }

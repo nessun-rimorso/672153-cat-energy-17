@@ -4,15 +4,16 @@
 }
 
 .page-form__title {
-  margin-bottom: 20px;
-  padding-top: 10px;
+  margin-bottom: 26px;
+  padding-top: 14px;
 
   line-height: 60px;
 }
 
 @media (min-width: $tablet-width) {
   .page-form__title {
-    margin-bottom: 50px;
+    margin-bottom: 56px;
+    padding-top: 0;
   }
 
   .page-form__form {
@@ -20,8 +21,9 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .page-form__title {
-    margin: 0 auto 50px;
+    margin-top: -7px;
+    padding-left: 95px;
   }
 }
