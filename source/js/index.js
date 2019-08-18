@@ -21,4 +21,3 @@ document.addEventListener("DOMContentLoaded", function(event) {
   removeJsClass(page, 'page__no-js');
   toggleMenu(menu);
 });
-
