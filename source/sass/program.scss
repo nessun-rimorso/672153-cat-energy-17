@@ -10,7 +10,7 @@
   width: 50px;
   height: 50px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   border-radius: 50%;
   background-color: $green;
@@ -38,6 +38,7 @@
 
 .program__title {
   margin: 0;
+  padding-top: 9px;
 
   font-size: $font-size-title-small;
   font-weight: 400;
@@ -60,6 +61,7 @@
   display: flex;
   align-items: center;
   min-width: 122px;
+  width: 100%;
   padding: 20px 28px 20px 0;
 
   font-size: $font-size-medium;
@@ -69,7 +71,7 @@
   line-height: 16px;
 
   box-sizing: border-box;
-  border-top: $grey-yet solid 1px;
+  border-top: $grey-pff solid 1px;
   cursor: pointer;
   transition: 200ms ease;
   outline: none;
@@ -88,7 +90,7 @@
   display: block;
   width: 25px;
   height: 15px;
-  margin-left: 25px;
+  margin-left: 10px;
 
   background-image: url("../img/icon-right-arrow-long.svg");
   background-position: center;
@@ -107,12 +109,12 @@
   .program__wrapper {
     position: relative;
 
-    padding: 80px 280px 62px 55px;
+    padding: 80px 280px 60px 55px;
   }
 
   .program__picture {
     position: absolute;
-    top: 50%;
+    top: 52%;
     right: 60px;
     transform: translateY(-50%);
 
@@ -122,13 +124,14 @@
   }
 
   .program__title {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
+    padding-top: 0;
 
     font-size: $font-size-title;
   }
 
   .program__description {
-    margin-bottom: 60px;
+    margin-bottom: 56px;
     padding: 0;
 
     font-size: $font-size-medium;
@@ -150,7 +153,13 @@
     border-top: none;
   }
 
+  .program__link::after {
+    margin-left: 20px;
+  }
+
   .program__picture--slim svg {
+    top: 43%;
+
     width: 141px;
     height: 194px;
   }
@@ -164,7 +173,11 @@
 @media (min-width: $desktop-width) {
   .program__wrapper {
     align-items: center;
-    padding: 47px 52px 67px;
+    padding: 47px 52px 61px;
+  }
+
+  .program__title {
+    margin-bottom: 46px;
   }
 
   .program__picture {
@@ -175,7 +188,7 @@
     width: 100px;
     height: 100px;
     margin-right: 64px;
-    margin-bottom: 45px;
+    margin-bottom: 42px;
   }
 
   .program__picture--slim svg {
@@ -189,6 +202,14 @@
   }
 
   .program__description {
-    margin-bottom: 36px;
+    margin-bottom: 30px;
+  }
+
+  .program__picture--panther ~ .program__description {
+    padding-right: 0;
+  }
+
+  .program__link::after {
+    margin-left: 23px;
   }
 }

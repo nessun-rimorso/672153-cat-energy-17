@@ -40,8 +40,8 @@
 
   display: flex;
   width: 84px;
-  height: 14px;
-  margin: 0 25px;
+  height: 13px;
+  margin: 0 17px 0 19px;
   padding: 3px 6px;
 
   box-sizing: border-box;
@@ -134,5 +134,10 @@
 @media (min-width: $desktop-width) {
   .range {
     justify-content: flex-end;
+  }
+
+  .range__line {
+    width: 424px;
+    margin-left: 29px;
   }
 }

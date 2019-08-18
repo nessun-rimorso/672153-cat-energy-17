@@ -5,14 +5,14 @@
 }
 
 .example__title {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
+  padding-top: 17px;
 
   line-height: 60px;
 }
 
 .example__text {
-  margin: 0;
-  margin-bottom: 27px;
+  margin: 0 0 25px;
   padding-right: 13px;
 
   font-family: $arial;
@@ -21,8 +21,7 @@
 .example__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 13px;
   padding: 0;
   justify-content: space-between;
 
@@ -38,11 +37,12 @@
 
 .example__accent {
   margin: 0;
-  padding: 13px 20px 24px 20px;
+  padding: 13px 20px 18px;
   width: 100%;
 
   font-size: $font-size-title-small;
   text-align: center;
+  text-transform: uppercase;
   font-weight: 400;
   line-height: 24px;
   color: $black-dark;
@@ -54,8 +54,8 @@
 
 .example__accent-description {
   margin-top: -16px;
-  padding: 10px 15px;
-  max-width: 60px;
+  padding: 6px 15px;
+  max-width: 90px;
 
   font-size: $font-size-small;
   font-family: $arial;
@@ -66,8 +66,7 @@
 }
 
 .example__cost {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 35px;
 
   text-align: center;
   text-transform: uppercase;
@@ -77,7 +76,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding-top: 50px;
+    padding-top: 43px;
     padding-bottom: 0;
 
     border-top: 1px solid $grey-yet;
@@ -86,11 +85,12 @@
   }
 
   .example__title {
-    margin-bottom: 60px;
+    margin-bottom: 65px;
+    padding-top: 0;
   }
 
   .example__text {
-    margin-bottom: 56px;
+    margin-bottom: 52px;
 
     font-size: $font-size-medium;
     line-height: 24px;
@@ -103,12 +103,13 @@
   }
 
   .example__list {
-    width: 50%;
+    width: 52%;
     margin: 0;
   }
 
   .example__item {
     margin-right: 20px;
+    width: 44%;
   }
 
   .example__item:last-of-type {
@@ -116,7 +117,7 @@
   }
 
   .example__accent {
-    padding: 22px 32px 24px;
+    padding: 15px 20px 19px;
 
     font-size: $font-size-largest;
     line-height: 37px;
@@ -136,10 +137,16 @@
     width: 200px;
     margin: 0;
     margin-left: auto;
+    padding-bottom: 17px;
 
     font-size: $font-size-larger;
     text-align: right;
     line-height: 20px;
+  }
+
+  .example__cost span {
+    padding-top: 10px;
+    display: block;
   }
 }
 
@@ -148,7 +155,7 @@
     padding-top: 60px;
 
     border: none;
-    background: linear-gradient(to bottom, transparent 215px, #f2f2f2 215px);
+    background: linear-gradient(to bottom, transparent 196px, #f2f2f2 196px);
   }
 
   .example__wrapper {
@@ -156,11 +163,12 @@
   }
 
   .example__title {
-    margin-bottom: 150px;
+    margin-bottom: 147px;
   }
 
   .example__text {
-    margin-bottom: 70px;
+    margin-bottom: 68px;
+    padding-right: 27px;
   }
 
   .example__description {
@@ -178,7 +186,7 @@
   .example__list {
     justify-content: flex-start;
     width: 100%;
-    margin-bottom: 48px;
+    margin-bottom: 44px;
   }
 
   .example__item,
@@ -188,7 +196,7 @@
   }
 
   .example__accent {
-    padding: 17px 32px 19px;
+    padding: 17px 18px 19px;
   }
 
   .example__accent-description {
@@ -202,6 +210,8 @@
   }
 
   .example__cost span {
-    padding-left: 64px;
+    display: inline;
+
+    padding-left: 59px;
   }
 }

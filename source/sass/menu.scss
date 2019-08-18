@@ -1,11 +1,10 @@
-.menu {
-  position: relative;
-}
-
 .menu__button {
   position: absolute;
-  right: 0;
-  top: -48px;
+  right: 20px;
+  top: 20px;
+  width: 25px;
+  height: 19px;
+
   font-size: 0;
   border: none;
   background-color: transparent;
@@ -16,32 +15,25 @@
   display: none;
 }
 
-.menu__icon {
-  display: block;
-  width: 25px;
-  height: 19px;
-  background-repeat: no-repeat;
-}
+.menu__button::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-.menu__icon--open {
+  background-repeat: no-repeat;
   background-image: url("../img/icon-mobile-menu.svg");
 }
 
-.menu__icon--close {
+.menu--open .menu__button::after {
   background-image: url("../img/icon-close.svg");
 }
 
-.menu--open .menu__icon--close,
-.menu--close .menu__icon--open {
-  display: block;
-}
-
-.menu--open .menu__icon--open,
-.menu--close .menu__icon--close {
-  display: none;
-}
-
 .menu__list {
+  display: none;
   list-style: none;
   min-width: 320px;
   margin: 0 auto;
@@ -50,10 +42,6 @@
 
 .menu--open .menu__list {
   display: block;
-}
-
-.menu--close .menu__list {
-  display: none;
 }
 
 .menu__link {
@@ -78,20 +66,21 @@
     display: none;
   }
 
-  .menu {
-    //width: 438px;
-  }
-
   .menu .menu__list {
     display: flex;
+  }
+
+  .menu__list {
     justify-content: space-between;
-    width: auto;
+    width: 440px;
   }
 
   .menu__link {
-    padding: 12px 0;
+    padding: 12px 0 7px;
+    margin-bottom: 5px;
 
     font-size: $font-size-large;
+    font-weight: 400;
     line-height: 25px;
     color: $black;
 
@@ -110,7 +99,7 @@
   }
 
   .menu__item {
-    margin-right: 36px;
+    margin-right: 18px;
   }
 
   .menu__item:last-of-type {
@@ -127,6 +116,11 @@
     position: static;
   }
 
+  .menu__list {
+    justify-content: flex-end;
+    min-width: 600px;
+  }
+
   .menu__list--green::before {
     content: "";
     position: absolute;
@@ -139,6 +133,10 @@
     height: 696px;
 
     background-color: $green-dark;
+  }
+
+  .menu__item {
+    margin-right: 38px;
   }
 
   .menu__list--green .menu__link {

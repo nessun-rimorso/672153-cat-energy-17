@@ -1,5 +1,6 @@
 .presentation {
   position: relative;
+
   color: $white;
   text-align: center;
 }
@@ -10,7 +11,7 @@
 
 .presentation__title {
   position: relative;
-  padding: 29px 15px 10px 15px;
+  padding: 29px 15px 13px;
 
   line-height: 36px;
   color: inherit;
@@ -30,7 +31,7 @@
 
 .presentation__description {
   padding: 9px 0;
-  margin: 0;
+  margin: 0 0 20px;
 
   text-transform: uppercase;
   line-height: 14px;
@@ -38,6 +39,13 @@
 
 .presentation__picture {
   width: 280px;
+}
+
+.presentation__link {
+  padding: 11px;
+
+  font-size: $font-size-default;
+  line-height: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,6 +63,7 @@
 
   .presentation__wrapper {
     padding: 0 90px;
+    padding-left: 118px;
     box-sizing: border-box;
   }
 
@@ -79,13 +88,18 @@
   .presentation__picture {
     position: absolute;
     z-index: -1;
+    top: 72%;
 
     width: 709px;
+    margin-left: -88px;
   }
 
   .presentation__link {
     display: inline-block;
-    padding: 17px 30px 15px;
+    padding: 15px 27px 15px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -95,7 +109,8 @@
   }
 
   .presentation__wrapper {
-    padding-top: 33px;
+    padding-top: 28px;
+    padding-left: 102px;
   }
 
   .presentation__title {
@@ -103,14 +118,14 @@
   }
 
   .presentation__description {
-    margin-bottom: 50px;
+    margin-bottom: 43px;
   }
 
   .presentation__picture {
-    top: 0;
-    right: 328px;
+    top: -53px;
+    right: 255px;
 
-    width: 522px;
+    width: 553px;
   }
 
   .presentation__link {

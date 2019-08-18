@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
 
-  padding-top: 22px;
+  padding-top: 18px;
   padding-bottom: 20px;
 }
 
@@ -31,6 +31,7 @@
 
 .copyright__logo svg {
   margin-left: auto;
+  margin-right: -5px;
 
   fill: $grey-44;
   transition: 300ms ease;
@@ -63,5 +64,11 @@
     width: 40px;
     height: 44px;
     margin-left: 20px;
+    margin-right: 0;
+    fill: $grey-44;
+  }
+
+  .copyright__logo path {
+    fill: $grey-44;
   }
 }

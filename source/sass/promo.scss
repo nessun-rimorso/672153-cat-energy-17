@@ -45,7 +45,7 @@
     min-height: auto;
     display: flex;
     justify-content: space-between;
-    padding: 65px 125px 65px 90px;
+    padding: 65px 125px 68px 90px;
   }
 
   .promo__picture {
@@ -55,6 +55,8 @@
   .promo__text {
     width: 170px;
     margin-left: auto;
+    padding-top: 6px;
+    padding-left: 9px;
 
     text-align: left;
   }
@@ -65,15 +67,17 @@
     flex-direction: column;
     min-width: 245px;
     width: 245px;
-    padding: 65px 43px 43px;
+    margin-right: 12px;
+    padding: 65px 38px 43px;
   }
 
   .promo__picture {
     margin: 0 auto;
-    margin-bottom: 64px;
+    margin-bottom: 58px;
   }
 
   .promo__text {
     text-align: center;
+    padding: 0;
   }
 }
