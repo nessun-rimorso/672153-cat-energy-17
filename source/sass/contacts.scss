@@ -57,8 +57,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts__cutaway {
-    padding-bottom: 65px;
-    padding-top: 65px;
+    padding: 65px 40px 57px;
   }
 
   .contacts__cooperation {
@@ -80,7 +79,7 @@
 
   .contacts__address span {
     display: block;
-    padding-top: 25px;
+    padding-top: 18px;
   }
 
   .contacts__picture-map {
@@ -105,13 +104,17 @@
   .contacts__cutaway {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 22px;
     z-index: 1;
 
     width: 570px;
-    padding: 70px 90px 62px 76px;
+    padding: 66px 85px 62px 76px;
 
     background: $white;
+  }
+
+  .contacts__address {
+    text-align: left;
   }
 
   .contacts__map {
@@ -124,7 +127,8 @@
 
   .contacts__map::before {
     top: 50%;
-    left: 74%;
+    right: 301px;
+    left: auto;
 
     width: 113px;
     height: 106px;

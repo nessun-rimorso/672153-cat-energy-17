@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <!--todo добавить в др--->
   <title>Cat Energy</title>
 </head>
 <body>
@@ -21,10 +23,9 @@
           <img class="header__picture" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="39">
         </picture>
       </a>
-      <nav class="header__menu menu menu--open">
+      <nav class="header__menu menu">
         <button class="menu__button" type="button">
-          <span class="menu__icon menu__icon--open">Открыть</span>
-          <span class="menu__icon menu__icon--close">Закрыть</span>
+          Открыть
         </button>
         <ul class="menu__list menu__list--green">
           <li class="menu__item">
@@ -41,7 +42,8 @@
     </div>
     <picture>
       <source media="(min-width: 1280px)" srcset="img/index-background-desktop@1x.webp 1x, img/index-background-desktop@2x.webp 2x">
-      <source media="(min-width: 320px)" srcset="img/index-background-desktop@1x.webp 1x, img/index-background-desktop@2x.webp 2x">
+      <source media="(min-width: 320px)"
+              srcset="img/index-background-mobile@1x.jpg 1x, img/index-background-mobile@2x.jpg 2x">
       <source media="(min-width: 1280px)" srcset="img/index-background-desktop@1x.jpg 1x, img/index-background-desktop@2x.jpg 2x">
       <img class="header__background" src="img/index-background-mobile@1x.jpg" srcset="img/index-background-mobile@2x.jpg 2x" alt="Фонофое изображение котика" width="320" height="305">
     </picture>
@@ -212,7 +214,7 @@
         <li class="socials__item">
           <a class="socials__link" href="#">
             Vkontakte
-            <svg width="22" height="12">
+            <svg class="social__icon--vk" width="22" height="12">
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
@@ -220,7 +222,7 @@
         <li class="socials__item">
           <a class="socials__link" href="#">
             instagram
-            <svg width="17" height="17">
+            <svg class="social__icon--insta" width="17" height="17">
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
@@ -228,7 +230,7 @@
         <li class="socials__item">
           <a class="socials__link" href="#">
             Facebook
-            <svg width="10" height="19">
+            <svg class="social__icon--fb" width="10" height="19">
               <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
@@ -245,6 +247,6 @@
     </div>
   </footer>
 </div>
-<script src="#"></script>
+<script src="./js/index.js"></script>
 </body>
 </html>

@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
 <body>
+<div style="display: none">
+  <include src="build/img/sprite.svg"></include>
+</div>
 <div class="page page__no-js">
   <header class="page__header header">
     <div class="header__wrapper">
@@ -20,10 +23,9 @@
           <img class="header__picture" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="39">
         </picture>
       </a>
-      <nav class="header__menu menu menu--open">
+      <nav class="header__menu menu">
         <button class="menu__button" type="button">
-          <span class="menu__icon menu__icon--open">Открыть</span>
-          <span class="menu__icon menu__icon--close">Закрыть</span>
+          Открыть
         </button>
         <ul class="menu__list">
           <li class="menu__item">
@@ -425,6 +427,6 @@
     </div>
   </footer>
 </div>
-<script src="#"></script>
+<script src="./js/index.js"></script>
 </body>
 </html>
