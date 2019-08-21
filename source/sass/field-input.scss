@@ -8,9 +8,14 @@
   color: $black;
 }
 
-.field-input__text {
+.field-input__label {
+  margin-bottom: 14px;
   padding-right: 15px;
   flex-shrink: 0;
+}
+
+.field-input__label:last-of-type {
+  margin-bottom: 0;
 }
 
 .field-input__input {
@@ -79,8 +84,8 @@
     padding: 15px 60px 13px 20px;
   }
 
-  .field-input__text {
-    padding-right: 19px;
+  .field-input__label {
+    margin-bottom: 19px;
   }
 
   .field-input__picture {
@@ -94,7 +99,5 @@
 }
 
 @media (min-width: $desktop-width) {
-  .field-input__text {
-    padding-right: 23px;
-  }
+
 }

@@ -55,6 +55,13 @@
   background-size: cover;
 }
 
+.contacts__js-map {
+  width: 100%;
+  height: 365px;
+  padding: 0;
+  margin: 0;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__cutaway {
     padding: 65px 40px 57px;
@@ -84,6 +91,10 @@
 
   .contacts__picture-map {
     width: 767px;
+    height: 400px;
+  }
+
+  .contacts__js-map {
     height: 400px;
   }
 
