@@ -25,17 +25,15 @@
   background: $grey;
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .productions__list {
-    margin: 0 -30px;
-    padding: 0 0 7px;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .productions__title {
     margin-bottom: 82px;
     margin-top: 0;
+  }
+
+  .productions__list {
+    margin: 0 -30px;
+    padding: 0 0 7px;
   }
 
   .productions__list::after {

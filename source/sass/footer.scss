@@ -49,12 +49,8 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .footer__wrapper {
     padding-top: 48px;
-  }
-
-  .footer__copyright {
-    margin-right: 7px;
   }
 }

@@ -4,7 +4,7 @@ var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var rigger = require('gulp-rigger');
 var uglify = require('gulp-uglify');
-var sourcemap = require('gulp-sourcemaps');
+var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
@@ -21,43 +21,30 @@ var del = require('del');
 gulp.task('css', function () {
   return gulp.src('source/sass/style.scss')
     .pipe(plumber())
-    .pipe(sourcemap.init())
+    .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('build/css'))
-    .pipe(gulp.src('build/css/*css'))
     .pipe(csso())
-    .pipe(rename('style.min.css'))
-    .pipe(sourcemap.write('.'))
+    .pipe(rename("style.min.css"))
+    .pipe(sourcemaps.write("."))
     .pipe(gulp.dest('build/css'))
     .pipe(server.stream());
 });
-
-// gulp.task('css-compress', function () {
-//   return gulp.src('build/css/*css')
-//     .pipe(csso())
-//     .pipe(rename('style.min.css'))
-//     .pipe(sourcemap.write('.'))
-//     .pipe(gulp.dest('build/css'))
-//     .pipe(server.stream());
-// })
 
 gulp.task('js', function () {
   return gulp.src('source/js/*.js')
     .pipe(plumber())
     .pipe(rigger())
     .pipe(gulp.dest('build/js'))
-    .pipe(server.stream());
 });
 
-gulp.task('compress', function () {
+gulp.task('js-compress', function () {
   return gulp.src('build/js/index.js')
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('build/js'))
-    .pipe(server.stream());
 });
 
 gulp.task('sprite', function () {
@@ -111,9 +98,9 @@ gulp.task('clean', function () {
 gulp.task('build', gulp.series(
   'clean',
   'copy',
-  'css',
   'js',
-  'compress',
+  'js-compress',
+  'css',
   'sprite',
   'html'
 ));
@@ -130,7 +117,7 @@ gulp.task('server', function () {
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series('css'));
   gulp.watch('source/img//**/*.svg', gulp.series('sprite', 'html', 'refresh'));
   gulp.watch('source/*.html', gulp.series('html', 'refresh'));
-  gulp.watch('source/js/*.js', gulp.series('js', 'compress', 'refresh'));
+  gulp.watch('source/js/*.js', gulp.series('js', 'js-compress', 'refresh'));
 });
 
 gulp.task('refresh', function (done) {

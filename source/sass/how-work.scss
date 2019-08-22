@@ -1,5 +1,5 @@
 .how-work__title {
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 
   line-height: 60px;
 }
@@ -104,10 +104,11 @@
 
 @media (min-width: $desktop-width) {
   .how-work__list {
-    max-width: 1220px;
+    margin-right: -5px;
   }
 
   .how-work__item {
+    margin-right: 72px;
     padding-bottom: 93px;
   }
 

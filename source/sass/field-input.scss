@@ -9,18 +9,13 @@
 }
 
 .field-input__label {
-  margin-bottom: 14px;
-  padding-right: 15px;
+  padding-right: 10px;
   flex-shrink: 0;
-}
-
-.field-input__label:last-of-type {
-  margin-bottom: 0;
 }
 
 .field-input__input {
   width: 100%;
-  padding: 13px 40px 12px 13px;
+  padding: 13px 40px 12px 15px;
   box-sizing: border-box;
 
   border: 1px solid rgba($grey-lighter, 0.5);
@@ -59,7 +54,7 @@
 .field-input__picture {
   position: absolute;
   top: 50%;
-  right: 5%;
+  right: 4%;
   transform: translate(-50%, -50%);
 
   display: block;
@@ -81,23 +76,47 @@
   }
 
   .field-input__input {
-    padding: 15px 60px 13px 20px;
+    padding: 13px 60px 13px 18px;
   }
 
   .field-input__label {
-    margin-bottom: 19px;
+    padding-right: 15px;
+  }
+
+  .field-input__input--mail {
+    margin-left: 6px;
   }
 
   .field-input__picture {
-    right: 2%;
+    right: 7px;
   }
 
-  .field-input__input--tel ~ svg {
+  .field-input__input--tel ~ .field-input__picture {
+    right: 2px;
+
     width: 22px;
     height: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .field-input__label {
+    padding-right: 19px;
+  }
 
+  .field-input__input {
+    padding: 15px 60px 13px 18px;
+  }
+
+  .field-input__input--mail {
+    margin-left: 0;
+  }
+
+  .field-input__picture {
+    right: 13px;
+  }
+
+  .field-input__input--tel ~ .field-input__picture {
+    right: 8px;
+  }
 }

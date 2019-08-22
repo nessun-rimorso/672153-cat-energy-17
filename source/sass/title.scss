@@ -12,8 +12,7 @@
   display: inline-block;
   padding-right: 22px;
   padding-left: 40px;
-  margin: 0;
-  margin-left: -40px;
+  margin: 0 0 0 -40px;
 
   font-weight: 400;
   color: $black-dark;
@@ -28,11 +27,13 @@
   content: "";
   position: absolute;
   top: 50%;
+  z-index: -1;
+
   width: 100vw;
   height: 3px;
   margin-top: 2px;
+
   background: #68b738;
-  z-index: -1;
   box-sizing: inherit;
 }
 
@@ -42,6 +43,30 @@
 
 .title--small::after {
   left: 20px;
+}
+
+@media (max-width: 443px) {
+  .title--small-line::after {
+    content: "";
+    right: -60px;
+    left: auto;
+    z-index: 0;
+    transform: translateY(-13px);
+
+    width: 16vw;
+  }
+}
+
+@media (max-width: 392px) {
+  .title--small-line::after {
+    content: "";
+    right: -60px;
+    left: auto;
+    z-index: 0;
+    transform: translateY(-13px);
+
+    width: 30vw;
+  }
 }
 
 @media (min-width: $tablet-width) {
