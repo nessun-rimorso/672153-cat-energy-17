@@ -1,45 +1,35 @@
 @import "normalize";
-@import "font";
+@import "blocks/font";
 @import "var";
-@import "container";
-@import "title";
-@import "button";
-@import "contacts";
-@import "content";
-@import "page";
-@import "example";
-@import "footer";
-@import "header";
-@import "how-work";
-@import "menu";
-@import "presentation";
-@import "programs";
-@import "socials";
-@import "range";
-@import "copyright";
-@import "slider";
-@import "program";
-@import "catalog";
-@import "productions";
-@import "product";
-@import "products";
-@import "product-else";
-@import "extra";
-@import "promo";
-@import "page-form";
-@import "form";
-@import "radio-btn";
-@import "checkbox-btn";
-@import "field-input";
-@import "textarea";
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
+@import "global";
+@import "blocks/container";
+@import "blocks/title";
+@import "blocks/button";
+@import "blocks/contacts";
+@import "blocks/content";
+@import "blocks/page";
+@import "blocks/example";
+@import "blocks/footer";
+@import "blocks/header";
+@import "blocks/how-work";
+@import "blocks/menu";
+@import "blocks/presentation";
+@import "blocks/programs";
+@import "blocks/socials";
+@import "blocks/range";
+@import "blocks/copyright";
+@import "blocks/slider";
+@import "blocks/program";
+@import "blocks/catalog";
+@import "blocks/productions";
+@import "blocks/product";
+@import "blocks/products";
+@import "blocks/product-else";
+@import "blocks/extra";
+@import "blocks/promo";
+@import "blocks/page-form";
+@import "blocks/form";
+@import "blocks/radio-btn";
+@import "blocks/checkbox-btn";
+@import "blocks/field-input";
+@import "blocks/textarea";

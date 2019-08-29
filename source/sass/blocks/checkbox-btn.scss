@@ -45,7 +45,7 @@
 }
 
 .checkbox-btn:hover .checkbox-btn__icon,
-.checkbox-btn:focus .checkbox-btn__icon {
+.checkbox-btn__input:focus ~ .checkbox-btn__icon {
   border: 1px solid $grey-baba;
 }
 

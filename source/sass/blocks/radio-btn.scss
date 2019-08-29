@@ -46,7 +46,7 @@
 }
 
 .radio-btn:hover .radio-btn__icon,
-.radio-btn:focus .radio-btn__icon {
+.radio-btn__input:focus ~ .radio-btn__icon {
   border: 1px solid $grey-baba;
 }
 

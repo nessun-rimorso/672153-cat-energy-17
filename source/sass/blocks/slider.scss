@@ -4,6 +4,8 @@
   width: 320px;
   min-height: 240px;
   margin: 0 0 31px -20px;
+
+  overflow: hidden;
 }
 
 .slider__picture {
@@ -73,6 +75,8 @@
     width: 100%;
     min-height: 348px;
     margin: 0 0 18px;
+
+    overflow: visible;
   }
 
   .slider__picture {
@@ -96,7 +100,7 @@
     left: 417px;
 
     width: 100vw;
-    height: 481px;
+    height: 461px;
     margin-left: 0;
     margin-right: -120px;
 

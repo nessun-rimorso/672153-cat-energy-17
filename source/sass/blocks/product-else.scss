@@ -88,6 +88,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .product-else {
+    width: 245px;
+  }
+
   .product-else__title {
     margin: 0 50px 28px;
   }

@@ -23,9 +23,10 @@
 }
 
 .form__groups {
+  display: flex;
+  flex-direction: column;
   margin: 0 0 30px;
   padding: 0;
-  display: flex;
 
   border: none;
 }
@@ -42,7 +43,7 @@
   margin-bottom: 12px;
 }
 
-.form-personal{
+.form-personal {
   margin-bottom: 12px;
 }
 
@@ -201,6 +202,7 @@
   }
 
   .form__row .form__groups {
+    flex-direction: column;
     width: 50%;
     margin-right: 80px;
     margin-bottom: 75px;
@@ -249,7 +251,7 @@
   .form__contacts-wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 1220px;
+    width: 100%;
   }
 
   .form__contacts-wrapper .form__input {

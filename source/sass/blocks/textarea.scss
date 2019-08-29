@@ -35,6 +35,8 @@
   .textarea {
     min-height: 174px;
     padding: 10px 19px;
+
+    font-size: $font-size-larger;
   }
 
   .textarea::placeholder {

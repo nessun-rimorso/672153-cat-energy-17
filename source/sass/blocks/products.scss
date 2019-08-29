@@ -27,7 +27,9 @@
   .products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+
+    overflow: hidden;
   }
 
   .products__item::before {
@@ -57,5 +59,6 @@
   .products__item {
     width: auto;
     margin-bottom: 60px;
+    padding: 0 40px;
   }
 }

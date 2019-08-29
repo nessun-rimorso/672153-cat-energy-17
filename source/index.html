@@ -7,6 +7,8 @@
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <title>Cat Energy</title>
+  <script>document.createElement( "picture" );</script>
+  <script src="./js/picturefill.min.js" async></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=23de1198-e98d-4d8f-bdc7-c9d7df1c092a&lang=ru_RU" type="text/javascript">
   </script>
 </head>
@@ -14,7 +16,7 @@
 <div style="display: none">
   <include src="build/img/sprite.svg"></include>
 </div>
-<div class="page page__no-js">
+<div class="page">
   <header class="page__header header">
     <div class="header__wrapper">
       <a class="header__logo">
@@ -26,7 +28,7 @@
         </picture>
       </a>
       <nav class="header__menu menu">
-        <button class="menu__button" type="button">
+        <button class="menu__button menu__button--no-js" type="button">
           Открыть
         </button>
         <ul class="menu__list menu__list--green">
@@ -44,10 +46,8 @@
     </div>
     <div class="header__wrapper-background">
       <picture>
-        <source media="(min-width: 1300px)"
-                srcset="img/index-background-desktop@1x.webp 1x, img/index-background-desktop@2x.webp 2x">
-        <source media="(min-width: 320px)"
-                srcset="img/index-background-mobile@1x.jpg 1x, img/index-background-mobile@2x.jpg 2x">
+        <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-background-desktop@1x.webp 1x, img/index-background-desktop@2x.webp 2x">
+        <source media="(min-width: 320px)" srcset="img/index-background-mobile@1x.jpg 1x, img/index-background-mobile@2x.jpg 2x">
         <source media="(min-width: 1300px)" srcset="img/index-background-desktop@1x.jpg 1x, img/index-background-desktop@2x.jpg 2x">
         <img class="header__background" src="img/index-background-mobile@1x.jpg" srcset="img/index-background-mobile@2x.jpg 2x" alt="Фонофое изображение котика" width="320" height="305">
       </picture>
@@ -59,9 +59,9 @@
         <h1 class="presentation__title title">Функциональное питание для котов</h1>
         <p class="presentation__description">Занялся собой? Займись котом!</p>
         <picture>
-          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
-          <source media="(min-width: 320px)" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 320px)" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
           <img class="presentation__picture" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Фото корма" width="280" height="270">
@@ -105,7 +105,7 @@
         <ol class="how-work__list">
           <li class="how-work__item">
             <div class="how-work__picture">
-              <img src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png 2x" alt="тематическая картинка" width="50" height="50"> <!-- todo сделать эти картинки на фон -->
+              <img src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png 2x" alt="тематическая картинка" width="50" height="50">
             </div>
             <p class="how-work__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
@@ -156,17 +156,17 @@
         <div class="example__slider slider">
           <div class="slider__container">
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-              <source media="(min-width: 320px)" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
               <img class="slider__picture slider__picture-1" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Фото, показывающее прогресс котика" height="232" width="311">
             </picture>
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-              <source media="(min-width: 320px)" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
               <img class="slider__picture slider__picture-2" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Фото, показывающее прогресс котика" width="320" height="240">
@@ -176,7 +176,7 @@
           <div class="slider__range range">
             <button class="range__text-btn" type="button">Было</button>
             <div class="range__line">
-              <button class="range__button" type="button"></button>
+              <button class="range__button" type="button">Кнопка переключения</button>
             </div>
             <button class="range__text-btn" type="button">Стало</button>
           </div>
@@ -198,9 +198,9 @@
         <div class="contacts__js-map" id="map"></div>
         <div class="contacts__wrapper-picture">
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-            <source media="(min-width: 320px)" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
             <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
             <img class="contacts__picture-map" width="320" height="365" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта местонахождения магазина">

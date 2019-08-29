@@ -15,3 +15,9 @@
 .page__header {
   min-width: 320px;
 }
+
+@media (min-width: $desktop-width) {
+  .page-form__title {
+    margin: 0 auto 56px;
+  }
+}

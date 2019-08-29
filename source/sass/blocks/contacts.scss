@@ -24,6 +24,8 @@
 .contacts__map {
   position: relative;
   height: 365px;
+
+  overflow: hidden;
 }
 
 .contacts__wrapper-picture {
@@ -65,7 +67,7 @@
   display: block;
   width: 55px;
   height: 53px;
-  background-image: url("../img/map-pin.png");
+  background-image: url("../../img/map-pin.png");
   background-size: cover;
 }
 

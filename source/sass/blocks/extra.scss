@@ -121,7 +121,7 @@
   .extra__item-wrapper {
     flex-wrap: nowrap;
     align-items: baseline;
-    padding: 15px 3px 16px;
+    padding: 17px 3px 14px;
   }
 
   .extra__button {
@@ -130,6 +130,8 @@
   }
 
   .extra__product {
+    max-width: 300px;
+
     font-size: $font-size-larger;
   }
 
@@ -139,7 +141,7 @@
     width: 300px;
     margin-right: 23px;
     margin-left: auto;
-    padding-top: 0;
+    padding-top: 3px;
   }
 
   .extra__determination {
