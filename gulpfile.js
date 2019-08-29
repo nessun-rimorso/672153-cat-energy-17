@@ -26,6 +26,7 @@ gulp.task('css', function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest('build/css'))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemaps.write("."))
@@ -97,6 +98,7 @@ gulp.task('clean', function () {
 
 gulp.task('build', gulp.series(
   'clean',
+  // 'images',
   'copy',
   'js',
   'js-compress',

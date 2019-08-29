@@ -25,14 +25,10 @@
 .form__groups {
   display: flex;
   flex-direction: column;
-  margin: 0 0 30px;
+  margin: 0 0 28px;
   padding: 0;
 
   border: none;
-}
-
-.form__groups:first-of-type {
-  margin-bottom: 28px;
 }
 
 .form__groups:last-of-type {
@@ -91,7 +87,7 @@
 
 @media (min-width: $tablet-width) {
   .form__description {
-    margin-bottom: 66px;
+    margin-bottom: 68px;
 
     font-size: $font-size-larger;
     line-height: 30px;
@@ -107,7 +103,7 @@
   }
 
   .form__row .form__groups:first-of-type {
-    margin-bottom: 73px;
+    margin-bottom: 66px;
   }
 
   .form__row .form__groups:last-of-type {
@@ -116,10 +112,6 @@
 
   .form__groups {
     margin-bottom: 70px;
-  }
-
-  .form__groups:first-of-type {
-    margin-bottom: 73px;
   }
 
   .form__groups:last-of-type {
@@ -194,7 +186,7 @@
   }
 
   .form__groups {
-    margin-bottom: 74px;
+    margin-bottom: 70px;
   }
 
   .form__row .form__groups:last-of-type {
@@ -226,12 +218,13 @@
 
   .form__checkbox-wrapper {
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: -18px;
+    margin-right: -108px;
   }
 
   .form__checkbox-wrapper .form__label {
-    margin-right: 30px;
+    margin-right: 108px;
   }
 
   .form__input {

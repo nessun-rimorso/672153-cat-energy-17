@@ -43,7 +43,7 @@ function yandexMap() {
 
     myMap.behaviors.disable('scrollZoom');
 
-    myMap.controls.add("zoomControl", {
+    myMap.controls.add('zoomControl', {
       position: {top: 100, right: 25}
     });
 
