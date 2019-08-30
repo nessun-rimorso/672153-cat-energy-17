@@ -98,7 +98,7 @@ gulp.task('clean', function () {
 
 gulp.task('build', gulp.series(
   'clean',
-  // 'images',
+  'images',
   'copy',
   'js',
   'js-compress',

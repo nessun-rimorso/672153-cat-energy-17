@@ -67,7 +67,7 @@
   fill: $green;
 }
 
-.error-input:not(:focus):invalid ~ .field-input__picture {
+.field-input--error:not(:focus):invalid ~ .field-input__picture {
   fill: $pink;
 }
 

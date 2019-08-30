@@ -25,11 +25,11 @@
   transform: translate(-50%, -50%);
 
   background-repeat: no-repeat;
-  background-image: url("../../img/icon-mobile-menu.svg");
+  background-image: url("../img/icon-mobile-menu.svg");
 }
 
 .menu--open .menu__button::after {
-  background-image: url("../../img/icon-close.svg");
+  background-image: url("../img/icon-close.svg");
 }
 
 .menu__list {

@@ -92,7 +92,7 @@
   height: 15px;
   margin-left: 10px;
 
-  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-image: url("../img/icon-right-arrow-long.svg");
   background-position: center;
   background-repeat: no-repeat;
   transition: 200ms ease;
@@ -102,7 +102,7 @@
 .program__link:focus::after {
   width: 34px;
   height: 12px;
-  background-image: url("../../img/icon-right-arrow-verylong.svg");
+  background-image: url("../img/icon-right-arrow-verylong.svg");
 }
 
 @media (min-width: $tablet-width) {
